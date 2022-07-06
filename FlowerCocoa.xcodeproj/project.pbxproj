@@ -7,12 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D1A1F19D2875603700F7F7EA /* FlowerCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = D1A1F19C2875603700F7F7EA /* FlowerCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1A1F1BC2875607C00F7F7EA /* PSPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1A42875607C00F7F7EA /* PSPageControl.swift */; };
+		D1A1F1BD2875607C00F7F7EA /* PSTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1A52875607C00F7F7EA /* PSTextView.swift */; };
+		D1A1F1BE2875607C00F7F7EA /* PSImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1A62875607C00F7F7EA /* PSImage.swift */; };
+		D1A1F1BF2875607C00F7F7EA /* PSStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1A72875607C00F7F7EA /* PSStackView.swift */; };
+		D1A1F1C42875607C00F7F7EA /* PSblock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1AD2875607C00F7F7EA /* PSblock.swift */; };
+		D1A1F1C52875607C00F7F7EA /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1AE2875607C00F7F7EA /* Link.swift */; };
+		D1A1F1C62875607C00F7F7EA /* PSButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1AF2875607C00F7F7EA /* PSButton.swift */; };
+		D1A1F1C72875607C00F7F7EA /* PSScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B02875607C00F7F7EA /* PSScrollView.swift */; };
+		D1A1F1C82875607C00F7F7EA /* PSLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B12875607C00F7F7EA /* PSLabel.swift */; };
+		D1A1F1C92875607C00F7F7EA /* PSFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B22875607C00F7F7EA /* PSFont.swift */; };
+		D1A1F1CA2875607C00F7F7EA /* LinkCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B32875607C00F7F7EA /* LinkCompatible.swift */; };
+		D1A1F1CB2875607C00F7F7EA /* PSColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B42875607C00F7F7EA /* PSColor.swift */; };
+		D1A1F1CC2875607C00F7F7EA /* PSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B52875607C00F7F7EA /* PSView.swift */; };
+		D1A1F1CD2875607C00F7F7EA /* PSTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B62875607C00F7F7EA /* PSTableView.swift */; };
+		D1A1F1CE2875607C00F7F7EA /* PSTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B72875607C00F7F7EA /* PSTextField.swift */; };
+		D1A1F1CF2875607C00F7F7EA /* PSCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B82875607C00F7F7EA /* PSCollectionView.swift */; };
+		D1A1F1D02875607C00F7F7EA /* PSAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1B92875607C00F7F7EA /* PSAttributedString.swift */; };
+		D1A1F1D12875607C00F7F7EA /* PSImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1BA2875607C00F7F7EA /* PSImageView.swift */; };
+		D1A1F1D22875607C00F7F7EA /* PSControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1BB2875607C00F7F7EA /* PSControl.swift */; };
+		D1A1F1D42875608800F7F7EA /* FlowerCocoa.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D1A1F1D32875608800F7F7EA /* FlowerCocoa.podspec */; };
+		D1A1F1E52875678700F7F7EA /* UIButton+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */; };
+		D1A1F1E62875678700F7F7EA /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */; };
+		D1A1F1E72875678700F7F7EA /* UIImage+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		D1A1F1992875603700F7F7EA /* FlowerCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlowerCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1A1F19C2875603700F7F7EA /* FlowerCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlowerCocoa.h; sourceTree = "<group>"; };
+		D1A1F1A42875607C00F7F7EA /* PSPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSPageControl.swift; sourceTree = "<group>"; };
+		D1A1F1A52875607C00F7F7EA /* PSTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSTextView.swift; sourceTree = "<group>"; };
+		D1A1F1A62875607C00F7F7EA /* PSImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSImage.swift; sourceTree = "<group>"; };
+		D1A1F1A72875607C00F7F7EA /* PSStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSStackView.swift; sourceTree = "<group>"; };
+		D1A1F1AD2875607C00F7F7EA /* PSblock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSblock.swift; sourceTree = "<group>"; };
+		D1A1F1AE2875607C00F7F7EA /* Link.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		D1A1F1AF2875607C00F7F7EA /* PSButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSButton.swift; sourceTree = "<group>"; };
+		D1A1F1B02875607C00F7F7EA /* PSScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSScrollView.swift; sourceTree = "<group>"; };
+		D1A1F1B12875607C00F7F7EA /* PSLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSLabel.swift; sourceTree = "<group>"; };
+		D1A1F1B22875607C00F7F7EA /* PSFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSFont.swift; sourceTree = "<group>"; };
+		D1A1F1B32875607C00F7F7EA /* LinkCompatible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkCompatible.swift; sourceTree = "<group>"; };
+		D1A1F1B42875607C00F7F7EA /* PSColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSColor.swift; sourceTree = "<group>"; };
+		D1A1F1B52875607C00F7F7EA /* PSView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSView.swift; sourceTree = "<group>"; };
+		D1A1F1B62875607C00F7F7EA /* PSTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSTableView.swift; sourceTree = "<group>"; };
+		D1A1F1B72875607C00F7F7EA /* PSTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSTextField.swift; sourceTree = "<group>"; };
+		D1A1F1B82875607C00F7F7EA /* PSCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSCollectionView.swift; sourceTree = "<group>"; };
+		D1A1F1B92875607C00F7F7EA /* PSAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSAttributedString.swift; sourceTree = "<group>"; };
+		D1A1F1BA2875607C00F7F7EA /* PSImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSImageView.swift; sourceTree = "<group>"; };
+		D1A1F1BB2875607C00F7F7EA /* PSControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PSControl.swift; sourceTree = "<group>"; };
+		D1A1F1D32875608800F7F7EA /* FlowerCocoa.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FlowerCocoa.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Hex.swift"; sourceTree = "<group>"; };
+		D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,7 +73,8 @@
 		D1A1F18F2875603700F7F7EA = {
 			isa = PBXGroup;
 			children = (
-				D1A1F19B2875603700F7F7EA /* FlowerCocoa */,
+				D1A1F1D32875608800F7F7EA /* FlowerCocoa.podspec */,
+				D1A1F1A32875607C00F7F7EA /* Source */,
 				D1A1F19A2875603700F7F7EA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,12 +87,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D1A1F19B2875603700F7F7EA /* FlowerCocoa */ = {
+		D1A1F1A32875607C00F7F7EA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D1A1F19C2875603700F7F7EA /* FlowerCocoa.h */,
+				D1A1F1EB28756DA200F7F7EA /* Extension */,
+				D1A1F1AE2875607C00F7F7EA /* Link.swift */,
+				D1A1F1B32875607C00F7F7EA /* LinkCompatible.swift */,
+				D1A1F1A42875607C00F7F7EA /* PSPageControl.swift */,
+				D1A1F1A52875607C00F7F7EA /* PSTextView.swift */,
+				D1A1F1A62875607C00F7F7EA /* PSImage.swift */,
+				D1A1F1BA2875607C00F7F7EA /* PSImageView.swift */,
+				D1A1F1A72875607C00F7F7EA /* PSStackView.swift */,
+				D1A1F1AD2875607C00F7F7EA /* PSblock.swift */,
+				D1A1F1AF2875607C00F7F7EA /* PSButton.swift */,
+				D1A1F1B02875607C00F7F7EA /* PSScrollView.swift */,
+				D1A1F1B12875607C00F7F7EA /* PSLabel.swift */,
+				D1A1F1B22875607C00F7F7EA /* PSFont.swift */,
+				D1A1F1B42875607C00F7F7EA /* PSColor.swift */,
+				D1A1F1B52875607C00F7F7EA /* PSView.swift */,
+				D1A1F1B62875607C00F7F7EA /* PSTableView.swift */,
+				D1A1F1B72875607C00F7F7EA /* PSTextField.swift */,
+				D1A1F1B82875607C00F7F7EA /* PSCollectionView.swift */,
+				D1A1F1B92875607C00F7F7EA /* PSAttributedString.swift */,
+				D1A1F1BB2875607C00F7F7EA /* PSControl.swift */,
 			);
-			path = FlowerCocoa;
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D1A1F1EB28756DA200F7F7EA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */,
+				D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */,
+				D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -57,7 +131,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A1F19D2875603700F7F7EA /* FlowerCocoa.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A1F1D42875608800F7F7EA /* FlowerCocoa.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +203,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A1F1E62875678700F7F7EA /* UIColor+Hex.swift in Sources */,
+				D1A1F1D22875607C00F7F7EA /* PSControl.swift in Sources */,
+				D1A1F1C82875607C00F7F7EA /* PSLabel.swift in Sources */,
+				D1A1F1BF2875607C00F7F7EA /* PSStackView.swift in Sources */,
+				D1A1F1C72875607C00F7F7EA /* PSScrollView.swift in Sources */,
+				D1A1F1E72875678700F7F7EA /* UIImage+Hex.swift in Sources */,
+				D1A1F1C62875607C00F7F7EA /* PSButton.swift in Sources */,
+				D1A1F1BD2875607C00F7F7EA /* PSTextView.swift in Sources */,
+				D1A1F1CA2875607C00F7F7EA /* LinkCompatible.swift in Sources */,
+				D1A1F1D02875607C00F7F7EA /* PSAttributedString.swift in Sources */,
+				D1A1F1CC2875607C00F7F7EA /* PSView.swift in Sources */,
+				D1A1F1CB2875607C00F7F7EA /* PSColor.swift in Sources */,
+				D1A1F1C92875607C00F7F7EA /* PSFont.swift in Sources */,
+				D1A1F1BE2875607C00F7F7EA /* PSImage.swift in Sources */,
+				D1A1F1D12875607C00F7F7EA /* PSImageView.swift in Sources */,
+				D1A1F1CE2875607C00F7F7EA /* PSTextField.swift in Sources */,
+				D1A1F1CD2875607C00F7F7EA /* PSTableView.swift in Sources */,
+				D1A1F1C42875607C00F7F7EA /* PSblock.swift in Sources */,
+				D1A1F1BC2875607C00F7F7EA /* PSPageControl.swift in Sources */,
+				D1A1F1C52875607C00F7F7EA /* Link.swift in Sources */,
+				D1A1F1CF2875607C00F7F7EA /* PSCollectionView.swift in Sources */,
+				D1A1F1E52875678700F7F7EA /* UIButton+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,15 +363,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marst123.china.FlowerCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,15 +394,19 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				MACH_O_TYPE = staticlib;
 				MARKETING_VERSION = 1.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.marst123.china.FlowerCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
