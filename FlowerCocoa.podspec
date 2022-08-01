@@ -4,9 +4,7 @@ Pod::Spec.new do |spec|
   spec.version      = "0.0.1"
   spec.summary      = "Swift chaining syntax can be used to improve efficiency."
 
-  spec.description  = <<-DESC
-			TODO: Add long description of the pod here.
-			DESC
+  spec.description  = "Swift chaining syntax can be used to improve efficiency.()"
 
   spec.homepage     = "https://github.com/marst123/FlowerCocoa"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
@@ -14,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/marst123/FlowerCocoa.git", :tag => "#{spec.version}" }
   spec.social_media_url   = "https://github.com/marst123"
 
-  spec.source_files  = "Source/*.{swift}"
+  spec.source_files  = "Source/**/*.{swift}"
 
   spec.ios.deployment_target = "9.0"
   
