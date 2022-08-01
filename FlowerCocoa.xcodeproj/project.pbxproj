@@ -90,7 +90,9 @@
 		D1A1F1A32875607C00F7F7EA /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D1A1F1EB28756DA200F7F7EA /* Extension */,
+				D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */,
+				D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */,
+				D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */,
 				D1A1F1AE2875607C00F7F7EA /* Link.swift */,
 				D1A1F1B32875607C00F7F7EA /* LinkCompatible.swift */,
 				D1A1F1A42875607C00F7F7EA /* PSPageControl.swift */,
@@ -112,16 +114,6 @@
 				D1A1F1BB2875607C00F7F7EA /* PSControl.swift */,
 			);
 			path = Source;
-			sourceTree = "<group>";
-		};
-		D1A1F1EB28756DA200F7F7EA /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */,
-				D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */,
-				D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */,
-			);
-			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
