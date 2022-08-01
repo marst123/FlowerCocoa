@@ -12,7 +12,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/marst123/FlowerCocoa.git", :tag => spec.version }
   spec.social_media_url   = "https://github.com/marst123"
 
-  spec.source_files  = ["Source/*.swift"]
+  spec.source_files  = "FlowerCocoa/**/*"
 
   spec.ios.deployment_target = "9.0"
   
