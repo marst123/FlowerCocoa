@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "FlowerCocoa"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.1"
   spec.summary      = "Swift chaining syntax can be used to improve efficiency."
 
   spec.description  = "Swift chaining syntax can be used to improve efficiency.()"
