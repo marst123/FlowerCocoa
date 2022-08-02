@@ -30,6 +30,7 @@
 		D1A1F1E52875678700F7F7EA /* UIButton+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */; };
 		D1A1F1E62875678700F7F7EA /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */; };
 		D1A1F1E72875678700F7F7EA /* UIImage+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */; };
+		D7A2DFB42898BE7A009CA13C /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D7A2DFB32898BE7A009CA13C /* LICENSE */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		D1A1F1E12875678700F7F7EA /* UIButton+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Hex.swift"; sourceTree = "<group>"; };
 		D1A1F1E22875678700F7F7EA /* UIColor+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
 		D1A1F1E32875678700F7F7EA /* UIImage+Hex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Hex.swift"; sourceTree = "<group>"; };
+		D7A2DFB32898BE7A009CA13C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,7 @@
 		D1A1F18F2875603700F7F7EA = {
 			isa = PBXGroup;
 			children = (
-				D1A1F1D32875608800F7F7EA /* FlowerCocoa.podspec */,
+				D7A2DFB52898BEA8009CA13C /* Deployment */,
 				D1A1F1A32875607C00F7F7EA /* Source */,
 				D1A1F19A2875603700F7F7EA /* Products */,
 			);
@@ -114,6 +116,15 @@
 				D1A1F1BB2875607C00F7F7EA /* PSControl.swift */,
 			);
 			path = Source;
+			sourceTree = "<group>";
+		};
+		D7A2DFB52898BEA8009CA13C /* Deployment */ = {
+			isa = PBXGroup;
+			children = (
+				D7A2DFB32898BE7A009CA13C /* LICENSE */,
+				D1A1F1D32875608800F7F7EA /* FlowerCocoa.podspec */,
+			);
+			name = Deployment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7A2DFB42898BE7A009CA13C /* LICENSE in Resources */,
 				D1A1F1D42875608800F7F7EA /* FlowerCocoa.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,10 +9,11 @@ Pod::Spec.new do |spec|
   spec.homepage     = "https://github.com/marst123/FlowerCocoa"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "marst123" => "tianlan2325@qq.com" }
-  spec.source       = { :git => "https://github.com/marst123/FlowerCocoa.git", :tag => spec.version }
   spec.social_media_url   = "https://github.com/marst123"
 
-  spec.source_files  = "FlowerCocoa/**/*"
+  spec.source       = { :git => "https://github.com/marst123/FlowerCocoa.git", :tag => spec.version }
+
+  spec.source_files = 'Source/*.swift'
 
   spec.ios.deployment_target = "9.0"
   
