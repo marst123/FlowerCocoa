@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'FlowerCocoa_Example' do
+  pod 'FlowerCocoa', :path => '../'
+
+  target 'FlowerCocoa_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
