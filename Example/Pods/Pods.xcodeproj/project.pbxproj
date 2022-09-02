@@ -1,0 +1,854 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00D2308CFF269C89294625F285AA27D2 /* NSMutableAttributedString+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555E07CFC8A669B2212A8790ADF1A095 /* NSMutableAttributedString+Fat.swift */; };
+		2030A52B016A91CE8B9C102DD1EC854A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		38D9FABE3BFDD7073A14CAEB54473D34 /* Flower_CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B30017853DCB74940925B97AD1882B6 /* Flower_CollectionView.swift */; };
+		4614006424933008539B6B8C4C012299 /* Flower_Control.swift in Sources */ = {isa = PBXBuildFile; fileRef = D483F99D9A8DD2AF28574C9675F160D4 /* Flower_Control.swift */; };
+		495DA61DABE6D8F7913D7D05CE667B38 /* Flower_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22177365E91D70031B118F82CDC70364 /* Flower_Button.swift */; };
+		49B2323754390F3FA0B470F62BBCE40E /* Flower_Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A96B73E5C496930081960332DAF56B2 /* Flower_Label.swift */; };
+		4F80A096F871B7F456F0341638715634 /* Flower_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E022FDFEFBD9F6155E8D041D87F3C64 /* Flower_TextField.swift */; };
+		62C59227304C867AAA3FFC3C63524283 /* Flower_TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 704C4C9DAB8B173284AA7EFFF97F1C45 /* Flower_TableView.swift */; };
+		7299BBCCAA3FC475183C1EA42237BCBA /* Flower_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E492E29C8A93C51257A7A9A9CFBD4B87 /* Flower_View.swift */; };
+		753E2570840CBFE07AD8FDDD3C122262 /* Pods-FlowerCocoa_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C3E79C8EAF9A554FBD854A1755E9407 /* Pods-FlowerCocoa_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80C695947998108D92270DBE88FB8994 /* Flower_ScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6E113E8004039169BE613D33BB60B9 /* Flower_ScrollView.swift */; };
+		81BB09AA647870AD83AD8C97F3B97F04 /* Flower_StackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724AD89F90F1169C1271237BB6A031BA /* Flower_StackView.swift */; };
+		85BD9AAD2407974E113F390780C55DE6 /* FlowerCocoa-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D87E202723DD69C88B6A8A1604845A47 /* FlowerCocoa-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BDF56731EA681E170DFC5B7EA4E409A /* UIFont+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172EDB0113C8158111939B1EE2532A76 /* UIFont+Fat.swift */; };
+		8C08A396C4F566DD65664D6A5C248308 /* Pods-FlowerCocoa_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A83CE24E40587AC02AC2B13E54D30 /* Pods-FlowerCocoa_Tests-dummy.m */; };
+		977E304824704834B0F8EA695B0965CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		9C352D2340795CBA955C4F04C426F216 /* LinkCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE21A4D5D6C4EC982FDBECFDBF3728D /* LinkCompatible.swift */; };
+		A099344DFF7FBCB5C47989FDEB4B60BF /* Flower_FontFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74B8AA58D098B3A4DB20EBF0B15275F6 /* Flower_FontFormat.swift */; };
+		A2CF2BB6CFD4C913516904BA8AAAE524 /* Pods-FlowerCocoa_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 02429C3EB0C2E54B11B69C05536A7442 /* Pods-FlowerCocoa_Example-dummy.m */; };
+		AA2525BF21D11B249B71F3DEFFB236ED /* UIButton+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = D829D42C516A12E1D3BD5C79BA4FB209 /* UIButton+Fat.swift */; };
+		AF103712A5DCB52D62BBD652A238B1CA /* Typealias_block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE0AF9A29ACC346D136534075F711E4 /* Typealias_block.swift */; };
+		B23A5F00EE0C6906D721EFE6492E41C1 /* Flower_PageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EFF5716A07E2F6B333272F7984F5D9 /* Flower_PageControl.swift */; };
+		B7693AC93CBC3ACAAC24AB0730F4D904 /* Flower_ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BD39CA12F0F8DF97DA360DBEF8ADD7 /* Flower_ImageView.swift */; };
+		B983A8ED9B665D3A677B25668AB6D96B /* Pods-FlowerCocoa_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA74945866FDEFB5D70B7306499C12A4 /* Pods-FlowerCocoa_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF6A693B262DE589F5AF832C9E7FE564 /* UIImage+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42412D907932C4AC46EB36671F47ECB6 /* UIImage+Fat.swift */; };
+		CB4E3925E6E74B45DA4A07CDB1925F55 /* Flower_TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3643AF0AD4E35B1D7F4EDAB1AEFED196 /* Flower_TextView.swift */; };
+		D1C748B14E2FD72A14169384678D694F /* FlowerCocoa-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3391FF06B4DD8814941BCAE2569DAA4B /* FlowerCocoa-dummy.m */; };
+		DD51571CB63315F136CE9153AEE324C3 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB758BBD98AC05E9123FA23D59E0C31F /* Link.swift */; };
+		E9D21562FC0A8270EE509B130559B678 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		FF3F287C655D31F6A711DBA06B7046BA /* UIColor+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2614F2282C2E03FF946AF4EDB83D683D /* UIColor+Fat.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2A78FDB6105F265CF3537B7CB81A654C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87A602630C3A80C187C223DB0ED41C2E;
+			remoteInfo = FlowerCocoa;
+		};
+		39105A0D07B4241FF3D4761FD7E3C56F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 57DBC153444AA74940A28015872E480B;
+			remoteInfo = "Pods-FlowerCocoa_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02429C3EB0C2E54B11B69C05536A7442 /* Pods-FlowerCocoa_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowerCocoa_Example-dummy.m"; sourceTree = "<group>"; };
+		11C0E4B850CEC847667E0D55480F57EF /* Pods-FlowerCocoa_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FlowerCocoa_Example-frameworks.sh"; sourceTree = "<group>"; };
+		11EE3F22D17D6A4778B80C6BDEEC32D3 /* Pods-FlowerCocoa_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		172EDB0113C8158111939B1EE2532A76 /* UIFont+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIFont+Fat.swift"; path = "FlowerCocoa/Classes/UIFont+Fat.swift"; sourceTree = "<group>"; };
+		1CECF2DC5B0A92393688A1F79BCCF7A3 /* Pods-FlowerCocoa_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Example-Info.plist"; sourceTree = "<group>"; };
+		22177365E91D70031B118F82CDC70364 /* Flower_Button.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_Button.swift; path = FlowerCocoa/Classes/Flower_Button.swift; sourceTree = "<group>"; };
+		2614F2282C2E03FF946AF4EDB83D683D /* UIColor+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIColor+Fat.swift"; path = "FlowerCocoa/Classes/UIColor+Fat.swift"; sourceTree = "<group>"; };
+		28F22BA6AB5A937C5746FF37C2AC6588 /* Pods-FlowerCocoa_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowerCocoa_Tests.modulemap"; sourceTree = "<group>"; };
+		2D12C19916EBD36CD2B27959833FCFCB /* Pods-FlowerCocoa_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Example.release.xcconfig"; sourceTree = "<group>"; };
+		2FE21A4D5D6C4EC982FDBECFDBF3728D /* LinkCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkCompatible.swift; path = FlowerCocoa/Classes/LinkCompatible.swift; sourceTree = "<group>"; };
+		302FC44AE4E10A47B0404CE8B8D1CF1A /* FlowerCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowerCocoa.framework; path = FlowerCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3391FF06B4DD8814941BCAE2569DAA4B /* FlowerCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowerCocoa-dummy.m"; sourceTree = "<group>"; };
+		3643AF0AD4E35B1D7F4EDAB1AEFED196 /* Flower_TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TextView.swift; path = FlowerCocoa/Classes/Flower_TextView.swift; sourceTree = "<group>"; };
+		42412D907932C4AC46EB36671F47ECB6 /* UIImage+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImage+Fat.swift"; path = "FlowerCocoa/Classes/UIImage+Fat.swift"; sourceTree = "<group>"; };
+		4C117F931D150283B673CDCDE7588B41 /* Pods-FlowerCocoa_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		50003CA81492C693744E2DBD1D705FF0 /* FlowerCocoa.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlowerCocoa.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		51FC8598DC28CBAD9AF2F2BA255F9622 /* Pods-FlowerCocoa_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowerCocoa_Example.framework; path = "Pods-FlowerCocoa_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		555E07CFC8A669B2212A8790ADF1A095 /* NSMutableAttributedString+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSMutableAttributedString+Fat.swift"; path = "FlowerCocoa/Classes/NSMutableAttributedString+Fat.swift"; sourceTree = "<group>"; };
+		5CE0AF9A29ACC346D136534075F711E4 /* Typealias_block.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealias_block.swift; path = FlowerCocoa/Classes/Typealias_block.swift; sourceTree = "<group>"; };
+		5F3C8F7977D9C18F7805FCEDF9724268 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_FlowerCocoa_Tests.framework; path = "Pods-FlowerCocoa_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C3E79C8EAF9A554FBD854A1755E9407 /* Pods-FlowerCocoa_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowerCocoa_Tests-umbrella.h"; sourceTree = "<group>"; };
+		704C4C9DAB8B173284AA7EFFF97F1C45 /* Flower_TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TableView.swift; path = FlowerCocoa/Classes/Flower_TableView.swift; sourceTree = "<group>"; };
+		71EFF5716A07E2F6B333272F7984F5D9 /* Flower_PageControl.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_PageControl.swift; path = FlowerCocoa/Classes/Flower_PageControl.swift; sourceTree = "<group>"; };
+		724AD89F90F1169C1271237BB6A031BA /* Flower_StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_StackView.swift; path = FlowerCocoa/Classes/Flower_StackView.swift; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74B8AA58D098B3A4DB20EBF0B15275F6 /* Flower_FontFormat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_FontFormat.swift; path = FlowerCocoa/Classes/Flower_FontFormat.swift; sourceTree = "<group>"; };
+		7B71CB31627DCF5BAA917C4A7A986C1F /* FlowerCocoa-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowerCocoa-prefix.pch"; sourceTree = "<group>"; };
+		7E022FDFEFBD9F6155E8D041D87F3C64 /* Flower_TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TextField.swift; path = FlowerCocoa/Classes/Flower_TextField.swift; sourceTree = "<group>"; };
+		840A83CE24E40587AC02AC2B13E54D30 /* Pods-FlowerCocoa_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowerCocoa_Tests-dummy.m"; sourceTree = "<group>"; };
+		9515963D59E4D3249ED391902F9541E1 /* FlowerCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlowerCocoa-Info.plist"; sourceTree = "<group>"; };
+		9580987BCF00D4876604FBF3D6BF4717 /* Pods-FlowerCocoa_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowerCocoa_Example.modulemap"; sourceTree = "<group>"; };
+		96A0B2FD580701F53FA63A421F840562 /* FlowerCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlowerCocoa.modulemap; sourceTree = "<group>"; };
+		9A96B73E5C496930081960332DAF56B2 /* Flower_Label.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_Label.swift; path = FlowerCocoa/Classes/Flower_Label.swift; sourceTree = "<group>"; };
+		9B30017853DCB74940925B97AD1882B6 /* Flower_CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_CollectionView.swift; path = FlowerCocoa/Classes/Flower_CollectionView.swift; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F11C270C2F365B90C9EBB03207FDCA0 /* Pods-FlowerCocoa_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5BC50AFAD455960236E4D3EF603CE86 /* Pods-FlowerCocoa_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowerCocoa_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		A8BD39CA12F0F8DF97DA360DBEF8ADD7 /* Flower_ImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_ImageView.swift; path = FlowerCocoa/Classes/Flower_ImageView.swift; sourceTree = "<group>"; };
+		AA74945866FDEFB5D70B7306499C12A4 /* Pods-FlowerCocoa_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowerCocoa_Example-umbrella.h"; sourceTree = "<group>"; };
+		AC662D2F8C5691E14E39A2A6C1505450 /* FlowerCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowerCocoa.release.xcconfig; sourceTree = "<group>"; };
+		AE8AFA00BCFD290CA9CAB475F5DC4253 /* Pods-FlowerCocoa_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowerCocoa_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AF6E113E8004039169BE613D33BB60B9 /* Flower_ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_ScrollView.swift; path = FlowerCocoa/Classes/Flower_ScrollView.swift; sourceTree = "<group>"; };
+		CB758BBD98AC05E9123FA23D59E0C31F /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = FlowerCocoa/Classes/Link.swift; sourceTree = "<group>"; };
+		D483F99D9A8DD2AF28574C9675F160D4 /* Flower_Control.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_Control.swift; path = FlowerCocoa/Classes/Flower_Control.swift; sourceTree = "<group>"; };
+		D829D42C516A12E1D3BD5C79BA4FB209 /* UIButton+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Fat.swift"; path = "FlowerCocoa/Classes/UIButton+Fat.swift"; sourceTree = "<group>"; };
+		D87E202723DD69C88B6A8A1604845A47 /* FlowerCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowerCocoa-umbrella.h"; sourceTree = "<group>"; };
+		DDE5038185C32D58E17101CA6C8BE2E2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E3CDD4BCE9393F739AB72D24B8BC0A42 /* Pods-FlowerCocoa_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Tests-Info.plist"; sourceTree = "<group>"; };
+		E492E29C8A93C51257A7A9A9CFBD4B87 /* Flower_View.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_View.swift; path = FlowerCocoa/Classes/Flower_View.swift; sourceTree = "<group>"; };
+		EF76A2D56F2F3F7B8B839C10D66B72F5 /* FlowerCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowerCocoa.debug.xcconfig; sourceTree = "<group>"; };
+		F0F5579CDEC1C1BC3808205B7543B360 /* Pods-FlowerCocoa_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Example.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4612DFF2595BF294149D3F6F662AE51E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9D21562FC0A8270EE509B130559B678 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		469671BC9AE42D75061017B91AB6E119 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2030A52B016A91CE8B9C102DD1EC854A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F72B3BE4A38F9ED0690BD13109714493 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				977E304824704834B0F8EA695B0965CC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BF1F526F68049F003D64967D9976FB2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8C791016B4EFCF1FB5A59A3150386FBE /* Pods-FlowerCocoa_Example */,
+				7330285C2A2B05B2CCE91A92ADEA79F1 /* Pods-FlowerCocoa_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		391B2C746C1B708F8C0DB5F866264AA2 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				50003CA81492C693744E2DBD1D705FF0 /* FlowerCocoa.podspec */,
+				5F3C8F7977D9C18F7805FCEDF9724268 /* LICENSE */,
+				DDE5038185C32D58E17101CA6C8BE2E2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		71014E46C901E370C5264D7F6D0C3046 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C44DFC5D4CBC4A599DFD4C8E08AC34CB /* FlowerCocoa */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7330285C2A2B05B2CCE91A92ADEA79F1 /* Pods-FlowerCocoa_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				28F22BA6AB5A937C5746FF37C2AC6588 /* Pods-FlowerCocoa_Tests.modulemap */,
+				A5BC50AFAD455960236E4D3EF603CE86 /* Pods-FlowerCocoa_Tests-acknowledgements.markdown */,
+				51FC8598DC28CBAD9AF2F2BA255F9622 /* Pods-FlowerCocoa_Tests-acknowledgements.plist */,
+				840A83CE24E40587AC02AC2B13E54D30 /* Pods-FlowerCocoa_Tests-dummy.m */,
+				E3CDD4BCE9393F739AB72D24B8BC0A42 /* Pods-FlowerCocoa_Tests-Info.plist */,
+				6C3E79C8EAF9A554FBD854A1755E9407 /* Pods-FlowerCocoa_Tests-umbrella.h */,
+				9F11C270C2F365B90C9EBB03207FDCA0 /* Pods-FlowerCocoa_Tests.debug.xcconfig */,
+				11EE3F22D17D6A4778B80C6BDEEC32D3 /* Pods-FlowerCocoa_Tests.release.xcconfig */,
+			);
+			name = "Pods-FlowerCocoa_Tests";
+			path = "Target Support Files/Pods-FlowerCocoa_Tests";
+			sourceTree = "<group>";
+		};
+		8C791016B4EFCF1FB5A59A3150386FBE /* Pods-FlowerCocoa_Example */ = {
+			isa = PBXGroup;
+			children = (
+				9580987BCF00D4876604FBF3D6BF4717 /* Pods-FlowerCocoa_Example.modulemap */,
+				AE8AFA00BCFD290CA9CAB475F5DC4253 /* Pods-FlowerCocoa_Example-acknowledgements.markdown */,
+				4C117F931D150283B673CDCDE7588B41 /* Pods-FlowerCocoa_Example-acknowledgements.plist */,
+				02429C3EB0C2E54B11B69C05536A7442 /* Pods-FlowerCocoa_Example-dummy.m */,
+				11C0E4B850CEC847667E0D55480F57EF /* Pods-FlowerCocoa_Example-frameworks.sh */,
+				1CECF2DC5B0A92393688A1F79BCCF7A3 /* Pods-FlowerCocoa_Example-Info.plist */,
+				AA74945866FDEFB5D70B7306499C12A4 /* Pods-FlowerCocoa_Example-umbrella.h */,
+				F0F5579CDEC1C1BC3808205B7543B360 /* Pods-FlowerCocoa_Example.debug.xcconfig */,
+				2D12C19916EBD36CD2B27959833FCFCB /* Pods-FlowerCocoa_Example.release.xcconfig */,
+			);
+			name = "Pods-FlowerCocoa_Example";
+			path = "Target Support Files/Pods-FlowerCocoa_Example";
+			sourceTree = "<group>";
+		};
+		C44DFC5D4CBC4A599DFD4C8E08AC34CB /* FlowerCocoa */ = {
+			isa = PBXGroup;
+			children = (
+				22177365E91D70031B118F82CDC70364 /* Flower_Button.swift */,
+				9B30017853DCB74940925B97AD1882B6 /* Flower_CollectionView.swift */,
+				D483F99D9A8DD2AF28574C9675F160D4 /* Flower_Control.swift */,
+				74B8AA58D098B3A4DB20EBF0B15275F6 /* Flower_FontFormat.swift */,
+				A8BD39CA12F0F8DF97DA360DBEF8ADD7 /* Flower_ImageView.swift */,
+				9A96B73E5C496930081960332DAF56B2 /* Flower_Label.swift */,
+				71EFF5716A07E2F6B333272F7984F5D9 /* Flower_PageControl.swift */,
+				AF6E113E8004039169BE613D33BB60B9 /* Flower_ScrollView.swift */,
+				724AD89F90F1169C1271237BB6A031BA /* Flower_StackView.swift */,
+				704C4C9DAB8B173284AA7EFFF97F1C45 /* Flower_TableView.swift */,
+				7E022FDFEFBD9F6155E8D041D87F3C64 /* Flower_TextField.swift */,
+				3643AF0AD4E35B1D7F4EDAB1AEFED196 /* Flower_TextView.swift */,
+				E492E29C8A93C51257A7A9A9CFBD4B87 /* Flower_View.swift */,
+				CB758BBD98AC05E9123FA23D59E0C31F /* Link.swift */,
+				2FE21A4D5D6C4EC982FDBECFDBF3728D /* LinkCompatible.swift */,
+				555E07CFC8A669B2212A8790ADF1A095 /* NSMutableAttributedString+Fat.swift */,
+				5CE0AF9A29ACC346D136534075F711E4 /* Typealias_block.swift */,
+				D829D42C516A12E1D3BD5C79BA4FB209 /* UIButton+Fat.swift */,
+				2614F2282C2E03FF946AF4EDB83D683D /* UIColor+Fat.swift */,
+				172EDB0113C8158111939B1EE2532A76 /* UIFont+Fat.swift */,
+				42412D907932C4AC46EB36671F47ECB6 /* UIImage+Fat.swift */,
+				391B2C746C1B708F8C0DB5F866264AA2 /* Pod */,
+				F70167768A8BA0B65A81F3BE3A34D2E2 /* Support Files */,
+			);
+			name = FlowerCocoa;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C997D54D528ADDD21CFD5872B3514BCB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				302FC44AE4E10A47B0404CE8B8D1CF1A /* FlowerCocoa.framework */,
+				54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */,
+				6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				71014E46C901E370C5264D7F6D0C3046 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				C997D54D528ADDD21CFD5872B3514BCB /* Products */,
+				2BF1F526F68049F003D64967D9976FB2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F70167768A8BA0B65A81F3BE3A34D2E2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96A0B2FD580701F53FA63A421F840562 /* FlowerCocoa.modulemap */,
+				3391FF06B4DD8814941BCAE2569DAA4B /* FlowerCocoa-dummy.m */,
+				9515963D59E4D3249ED391902F9541E1 /* FlowerCocoa-Info.plist */,
+				7B71CB31627DCF5BAA917C4A7A986C1F /* FlowerCocoa-prefix.pch */,
+				D87E202723DD69C88B6A8A1604845A47 /* FlowerCocoa-umbrella.h */,
+				EF76A2D56F2F3F7B8B839C10D66B72F5 /* FlowerCocoa.debug.xcconfig */,
+				AC662D2F8C5691E14E39A2A6C1505450 /* FlowerCocoa.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/FlowerCocoa";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		433EDBD3ED9C8B77A607E9D5EA2850C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B983A8ED9B665D3A677B25668AB6D96B /* Pods-FlowerCocoa_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53D8037E131AA60241F443E158B514AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753E2570840CBFE07AD8FDDD3C122262 /* Pods-FlowerCocoa_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51E5B7E53F9E6F03319A71AB43953AC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				85BD9AAD2407974E113F390780C55DE6 /* FlowerCocoa-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		57DBC153444AA74940A28015872E480B /* Pods-FlowerCocoa_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8ABB4B085233391388F5C1808E9C3B10 /* Build configuration list for PBXNativeTarget "Pods-FlowerCocoa_Example" */;
+			buildPhases = (
+				433EDBD3ED9C8B77A607E9D5EA2850C9 /* Headers */,
+				3D4E31061EF7D721C577E72A47A1544C /* Sources */,
+				4612DFF2595BF294149D3F6F662AE51E /* Frameworks */,
+				0B4CB9E255A33D4B65F3316BB266C502 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0EDEA4DD96170C0C08B4F88B4F6977A6 /* PBXTargetDependency */,
+			);
+			name = "Pods-FlowerCocoa_Example";
+			productName = "Pods-FlowerCocoa_Example";
+			productReference = 54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		87A602630C3A80C187C223DB0ED41C2E /* FlowerCocoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6C225E18A28361387BC1C2CE4308A75 /* Build configuration list for PBXNativeTarget "FlowerCocoa" */;
+			buildPhases = (
+				C51E5B7E53F9E6F03319A71AB43953AC /* Headers */,
+				4F3E4379A1B0DE97C041ACC8DAC33A56 /* Sources */,
+				F72B3BE4A38F9ED0690BD13109714493 /* Frameworks */,
+				15AF0C1EF8E13DD97C57D8E85D036099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlowerCocoa;
+			productName = FlowerCocoa;
+			productReference = 302FC44AE4E10A47B0404CE8B8D1CF1A /* FlowerCocoa.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD1D2C03DDEA574B31A59E093F258002 /* Pods-FlowerCocoa_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3958B09C8DC496BDD269594DE16A6B7F /* Build configuration list for PBXNativeTarget "Pods-FlowerCocoa_Tests" */;
+			buildPhases = (
+				53D8037E131AA60241F443E158B514AC /* Headers */,
+				C0A80AE7AC4BE2C240FB8BD5245EC41B /* Sources */,
+				469671BC9AE42D75061017B91AB6E119 /* Frameworks */,
+				932E5AF1C8F83837CDC674F55958AA50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81E9559F27A7EA25B9FB94C7C3C2B2E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-FlowerCocoa_Tests";
+			productName = "Pods-FlowerCocoa_Tests";
+			productReference = 6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = C997D54D528ADDD21CFD5872B3514BCB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87A602630C3A80C187C223DB0ED41C2E /* FlowerCocoa */,
+				57DBC153444AA74940A28015872E480B /* Pods-FlowerCocoa_Example */,
+				BD1D2C03DDEA574B31A59E093F258002 /* Pods-FlowerCocoa_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0B4CB9E255A33D4B65F3316BB266C502 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		15AF0C1EF8E13DD97C57D8E85D036099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		932E5AF1C8F83837CDC674F55958AA50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D4E31061EF7D721C577E72A47A1544C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2CF2BB6CFD4C913516904BA8AAAE524 /* Pods-FlowerCocoa_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F3E4379A1B0DE97C041ACC8DAC33A56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				495DA61DABE6D8F7913D7D05CE667B38 /* Flower_Button.swift in Sources */,
+				38D9FABE3BFDD7073A14CAEB54473D34 /* Flower_CollectionView.swift in Sources */,
+				4614006424933008539B6B8C4C012299 /* Flower_Control.swift in Sources */,
+				A099344DFF7FBCB5C47989FDEB4B60BF /* Flower_FontFormat.swift in Sources */,
+				B7693AC93CBC3ACAAC24AB0730F4D904 /* Flower_ImageView.swift in Sources */,
+				49B2323754390F3FA0B470F62BBCE40E /* Flower_Label.swift in Sources */,
+				B23A5F00EE0C6906D721EFE6492E41C1 /* Flower_PageControl.swift in Sources */,
+				80C695947998108D92270DBE88FB8994 /* Flower_ScrollView.swift in Sources */,
+				81BB09AA647870AD83AD8C97F3B97F04 /* Flower_StackView.swift in Sources */,
+				62C59227304C867AAA3FFC3C63524283 /* Flower_TableView.swift in Sources */,
+				4F80A096F871B7F456F0341638715634 /* Flower_TextField.swift in Sources */,
+				CB4E3925E6E74B45DA4A07CDB1925F55 /* Flower_TextView.swift in Sources */,
+				7299BBCCAA3FC475183C1EA42237BCBA /* Flower_View.swift in Sources */,
+				D1C748B14E2FD72A14169384678D694F /* FlowerCocoa-dummy.m in Sources */,
+				DD51571CB63315F136CE9153AEE324C3 /* Link.swift in Sources */,
+				9C352D2340795CBA955C4F04C426F216 /* LinkCompatible.swift in Sources */,
+				00D2308CFF269C89294625F285AA27D2 /* NSMutableAttributedString+Fat.swift in Sources */,
+				AF103712A5DCB52D62BBD652A238B1CA /* Typealias_block.swift in Sources */,
+				AA2525BF21D11B249B71F3DEFFB236ED /* UIButton+Fat.swift in Sources */,
+				FF3F287C655D31F6A711DBA06B7046BA /* UIColor+Fat.swift in Sources */,
+				8BDF56731EA681E170DFC5B7EA4E409A /* UIFont+Fat.swift in Sources */,
+				BF6A693B262DE589F5AF832C9E7FE564 /* UIImage+Fat.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0A80AE7AC4BE2C240FB8BD5245EC41B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8C08A396C4F566DD65664D6A5C248308 /* Pods-FlowerCocoa_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0EDEA4DD96170C0C08B4F88B4F6977A6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FlowerCocoa;
+			target = 87A602630C3A80C187C223DB0ED41C2E /* FlowerCocoa */;
+			targetProxy = 2A78FDB6105F265CF3537B7CB81A654C /* PBXContainerItemProxy */;
+		};
+		81E9559F27A7EA25B9FB94C7C3C2B2E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-FlowerCocoa_Example";
+			target = 57DBC153444AA74940A28015872E480B /* Pods-FlowerCocoa_Example */;
+			targetProxy = 39105A0D07B4241FF3D4761FD7E3C56F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		233EB9527E80B02713EBF9A3A69B8553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F11C270C2F365B90C9EBB03207FDCA0 /* Pods-FlowerCocoa_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A9AD829845887E51A883E85F325E75E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0F5579CDEC1C1BC3808205B7543B360 /* Pods-FlowerCocoa_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		881EFF80120D9034E810430824F31951 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC662D2F8C5691E14E39A2A6C1505450 /* FlowerCocoa.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlowerCocoa/FlowerCocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowerCocoa/FlowerCocoa-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlowerCocoa/FlowerCocoa.modulemap";
+				PRODUCT_MODULE_NAME = FlowerCocoa;
+				PRODUCT_NAME = FlowerCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D635F6C84C3DA5C2DB244BA5F9F5B399 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF76A2D56F2F3F7B8B839C10D66B72F5 /* FlowerCocoa.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FlowerCocoa/FlowerCocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FlowerCocoa/FlowerCocoa-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FlowerCocoa/FlowerCocoa.modulemap";
+				PRODUCT_MODULE_NAME = FlowerCocoa;
+				PRODUCT_NAME = FlowerCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EDE7408504B981828A84E42C4DCCCA1F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EE3F22D17D6A4778B80C6BDEEC32D3 /* Pods-FlowerCocoa_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F3D6E57D03B3E2D6717F75F52AA7D6DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D12C19916EBD36CD2B27959833FCFCB /* Pods-FlowerCocoa_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3958B09C8DC496BDD269594DE16A6B7F /* Build configuration list for PBXNativeTarget "Pods-FlowerCocoa_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				233EB9527E80B02713EBF9A3A69B8553 /* Debug */,
+				EDE7408504B981828A84E42C4DCCCA1F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D299434AB35E7FD6F7921C8EF24742FF /* Debug */,
+				7EE7A78859F657F6BEFC651185B43192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8ABB4B085233391388F5C1808E9C3B10 /* Build configuration list for PBXNativeTarget "Pods-FlowerCocoa_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9AD829845887E51A883E85F325E75E /* Debug */,
+				F3D6E57D03B3E2D6717F75F52AA7D6DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6C225E18A28361387BC1C2CE4308A75 /* Build configuration list for PBXNativeTarget "FlowerCocoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D635F6C84C3DA5C2DB244BA5F9F5B399 /* Debug */,
+				881EFF80120D9034E810430824F31951 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
