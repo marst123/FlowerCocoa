@@ -5,6 +5,7 @@ public typealias Flower_CollectionView = UICollectionView
 public typealias Flower_CollectionViewFlowLayout = UICollectionViewFlowLayout
 
 public extension Link where Base: Flower_CollectionView {
+    
     @discardableResult
     func dataSource(_ dataSource: UICollectionViewDataSource?) -> Link {
         self.base.dataSource = dataSource
@@ -18,9 +19,9 @@ public extension Link where Base: Flower_CollectionView {
     }
     
     @discardableResult
-    func register<T: UICollectionViewCell>(nibWithCellClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
+    func register<T: UICollectionViewCell>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
         let identifier = String(describing: name)
-        var bundle: Bundle?
+        var bundle: Bundle? = nil
 
         if let bundleName = bundleClass {
             bundle = Bundle(for: bundleName)
@@ -31,63 +32,55 @@ public extension Link where Base: Flower_CollectionView {
     }
     
     @discardableResult
-    func register<T: UICollectionViewCell>(cellWithClass name: T.Type) -> Link {
-        self.base.register(T.self, forCellWithReuseIdentifier: String(describing: name))
-        return self
-    }
-    
-//    @discardableResult
-//    func register(_ nibArr: [UINib?]) -> Link {
-//        nibArr.forEach { (nibName) in
-//            let nameStr = nibName!.description
-//            print("nib注册Name: \(nameStr)")
-//            self.register(nibWithCellClass: <#T##T.Type#>, at: <#T##AnyClass?#>)
-//            self.register(nibName, identifier: nameStr)
-//        }
-//        return self
-//    }
-    
-    @discardableResult
-    func register<T: UICollectionViewCell>(_ cellClassArr: [T.Type]) -> Link {
-        cellClassArr.forEach { cellClass in
-            print("cellClass注册Name: \(NSStringFromClass(cellClass))")
-            self.register(cellWithClass: cellClass)
+    private func registerHeader<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
+        let identifier = String(describing: name)
+        var bundle: Bundle? = nil
+
+        if let bundleName = bundleClass {
+            bundle = Bundle(for: bundleName)
         }
-        return self
-    }
-    
-    @discardableResult
-    func registerHeader(_ nib: UINib?,
-                  forSectionHeaderWithReuseIdentifier identifier: String) -> Link {
-        self.base.register(nib,
+
+        self.base.register(UINib(nibName: identifier, bundle: bundle),
                       forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                       withReuseIdentifier: identifier)
         return self
     }
     
-    
-    
     @discardableResult
-    func registerHeader<T: UICollectionReusableView>(_ viewClass: T.Type) -> Link {
-        self.base.register(viewClass.self,
-                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                      withReuseIdentifier: String(describing: viewClass))
-        return self
-    }
-    
-    @discardableResult
-    func registerFooter(_ nib: UINib?,
-                  forSectionFooterWithReuseIdentifier identifier: String) -> Link {
-        self.base.register(nib,
+    private func registerFooter<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
+        let identifier = String(describing: name)
+        var bundle: Bundle? = nil
+
+        if let bundleName = bundleClass {
+            bundle = Bundle(for: bundleName)
+        }
+
+        self.base.register(UINib(nibName: identifier, bundle: bundle),
                       forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                       withReuseIdentifier: identifier)
         return self
     }
     
     @discardableResult
-    func registerFooter(_ viewClass: Swift.AnyClass?,
-                  forSectionFooterWithReuseIdentifier identifier: String) -> Link {
-        self.base.register(viewClass,
+    func register<T: UICollectionViewCell>(viewClass name: T.Type) -> Link {
+        let identifier = String(describing: name)
+        self.base.register(T.self, forCellWithReuseIdentifier: identifier)
+        return self
+    }
+    
+    @discardableResult
+    func registerHeader<T: UICollectionReusableView>(viewClass name: T.Type) -> Link {
+        let identifier = String(describing: name)
+        self.base.register(name.self,
+                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                      withReuseIdentifier: identifier)
+        return self
+    }
+    
+    @discardableResult
+    func registerFooter<T: UICollectionReusableView>(viewClass name: T.Type) -> Link {
+        let identifier = String(describing: name)
+        self.base.register(name.self,
                       forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter,
                       withReuseIdentifier: identifier)
         return self

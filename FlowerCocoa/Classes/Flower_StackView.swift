@@ -5,7 +5,7 @@ public typealias Flower_StackView = UIStackView
 public extension Link where Base: Flower_StackView {
     
     @discardableResult
-    func label(_ closure: LabClosure? = nil) -> Link {
+    func label(_ closure: BlockHandler<UILabel>? = nil) -> Link {
         let view = UILabel()
         self.base.addArrangedSubview(view)
         closure?(view)
@@ -13,7 +13,7 @@ public extension Link where Base: Flower_StackView {
     }
 
     @discardableResult
-    func button(_ closure: BtnClosure? = nil) -> Link {
+    func button(_ closure: BlockHandler<UIButton>? = nil) -> Link {
         let view = UIButton()
         self.base.addArrangedSubview(view)
         closure?(view)
@@ -21,7 +21,7 @@ public extension Link where Base: Flower_StackView {
     }
     
     @discardableResult
-    func textField(_ closure: TFClosure? = nil) -> Link {
+    func textField(_ closure: BlockHandler<UITextField>? = nil) -> Link {
         let view = UITextField()
         self.base.addArrangedSubview(view)
         closure?(view)
@@ -29,7 +29,7 @@ public extension Link where Base: Flower_StackView {
     }
 
     @discardableResult
-    func stackView(closure: @escaping StackViewClosure) -> Link {
+    func stackView(closure: @escaping BlockHandler<UIStackView>) -> Link {
         let view = UIStackView()
         self.base.addArrangedSubview(view)
         closure(view)
@@ -37,7 +37,7 @@ public extension Link where Base: Flower_StackView {
     }
     
     @discardableResult
-    func imageView(closure: @escaping ImageViewClosure) -> Link {
+    func imageView(closure: @escaping BlockHandler<UIImageView>) -> Link {
         let view = UIImageView()
         self.base.addArrangedSubview(view)
         closure(view)

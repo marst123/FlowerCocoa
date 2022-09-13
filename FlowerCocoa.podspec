@@ -31,6 +31,7 @@ s.swift_versions = ['5.0']
   s.ios.deployment_target = '9.0'
 
   s.source_files = 'FlowerCocoa/Classes/**/*'
+  s.dependency 'SnapKit'
   
   # s.resource_bundles = {
   #   'FlowerCocoa' => ['FlowerCocoa/Assets/*.png']

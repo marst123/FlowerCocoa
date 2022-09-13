@@ -4,11 +4,7 @@ public typealias Flower_Label = UILabel
 
 
 public extension Link where Base: Flower_Label {
-    
-    enum TextMode {
-        case text(String?)
-        case attributedText(NSAttributedString?)
-    }
+
     
     @discardableResult
     func titleColor(_ textColor: UIColor?) -> Link {
@@ -29,14 +25,28 @@ public extension Link where Base: Flower_Label {
     }
     
     @discardableResult
-    func title(_ mode: TextMode) -> Link<Base> {
-        switch mode {
-        case .text(let string):
-            self.base.text = string
-        case .attributedText(let nSAttributedString):
-            self.base.attributedText = nSAttributedString
-        }
+    func text(_ title: String?) -> Link<Base> {
+        self.base.text = title
         return self
     }
-
+    
+    @discardableResult
+    func attributedText(_ title: NSAttributedString?) -> Link<Base> {
+        self.base.attributedText = title
+        return self
+    }
+    
+    @discardableResult
+    func lineBreakMode(_ mode: NSLineBreakMode) -> Link {
+        self.base.lineBreakMode = mode
+        return self
+    }
+    
+    @discardableResult
+    func minimumScale(_ scale: CGFloat) -> Link {
+        self.base.minimumScaleFactor = scale
+        return self
+    }
+    
+    
 }

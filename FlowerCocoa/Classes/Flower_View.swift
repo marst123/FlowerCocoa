@@ -4,17 +4,17 @@ public typealias Flower_View = UIView
 
 public extension Link where Base: Flower_View {
     
-    /// 转CGAffineTransform仿射变换2D
-    /// let tra = CGAffineTransform.identity 初始化
-    /// 链式调用:
-    /// rotated             旋转
-    /// scaled              缩放
-    /// translated         平移
-    @discardableResult
-    func toAffineTransform(_ affineTransform: CGAffineTransform) -> Link {
-        self.base.layer.setAffineTransform(affineTransform)
-        return self
-    }
+//    /// 转CGAffineTransform仿射变换2D
+//    /// let tra = CGAffineTransform.identity 初始化
+//    /// 链式调用:
+//    /// rotated             旋转
+//    /// scaled              缩放
+//    /// translated         平移
+//    @discardableResult
+//    func toAffineTransform(_ affineTransform: CGAffineTransform) -> Link {
+//        self.base.layer.setAffineTransform(affineTransform)
+//        return self
+//    }
     
     // 转CALayer绘制
     @discardableResult
@@ -102,8 +102,8 @@ public extension Link where Base: Flower_View {
     }
     
     @discardableResult
-    func shadowColor(_ shadowColor: UIColor?) -> Link {
-        self.base.layer.shadowColor = shadowColor?.cgColor
+    func shadowColor(_ shadowColor: CGColor?) -> Link {
+        self.base.layer.shadowColor = shadowColor
         return self
     }
     
@@ -170,6 +170,12 @@ public extension Link where Base: Flower_View {
         shapeLayer.path = bpath.cgPath
         self.base.layer.mask = shapeLayer
         
+        return self
+    }
+    
+    @discardableResult
+    func underline(_ direction: LineDirection, lineWidth: CGFloat = 1, color: UIColor, inset: CGFloat = 0, equal: LineEqualTo = .equalTo) -> Link {
+        self.base.underline(direction, lineWidth: lineWidth, color: color, inset: inset, equal: equal)
         return self
     }
     

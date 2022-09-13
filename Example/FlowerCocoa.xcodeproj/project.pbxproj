@@ -30,7 +30,7 @@
 /* Begin PBXFileReference section */
 		06C24BA977CE3504920F00FC /* Pods-FlowerCocoa_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerCocoa_Example.debug.xcconfig"; path = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1512E68D5A06BF8136C6F3CF /* Pods-FlowerCocoa_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerCocoa_Tests.debug.xcconfig"; path = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		2C608083020F7F29572E23B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		2C608083020F7F29572E23B2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4472D88FDDFADF8DDD28F8C7 /* Pods_FlowerCocoa_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerCocoa_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* FlowerCocoa_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlowerCocoa_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -42,9 +42,9 @@
 		607FACE51AFB9204008FA782 /* FlowerCocoa_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlowerCocoa_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7F65C358BCEF84A88639D83D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F65C358BCEF84A88639D83D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		94AEBC274A699DAA9C7C3E53 /* Pods_FlowerCocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerCocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A1C2653955F7AB390963494C /* FlowerCocoa.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = FlowerCocoa.podspec; path = ../FlowerCocoa.podspec; sourceTree = "<group>"; };
+		A1C2653955F7AB390963494C /* FlowerCocoa.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = FlowerCocoa.podspec; path = ../FlowerCocoa.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CB8C1CB7414063F041A9BE2E /* Pods-FlowerCocoa_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerCocoa_Example.release.xcconfig"; path = "Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example.release.xcconfig"; sourceTree = "<group>"; };
 		F1EB5CB262FDE123767840A5 /* Pods-FlowerCocoa_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlowerCocoa_Tests.release.xcconfig"; path = "Target Support Files/Pods-FlowerCocoa_Tests/Pods-FlowerCocoa_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -156,7 +156,6 @@
 				1512E68D5A06BF8136C6F3CF /* Pods-FlowerCocoa_Tests.debug.xcconfig */,
 				F1EB5CB262FDE123767840A5 /* Pods-FlowerCocoa_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -292,10 +292,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-FlowerCocoa_Example/Pods-FlowerCocoa_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/FlowerCocoa/FlowerCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FlowerCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

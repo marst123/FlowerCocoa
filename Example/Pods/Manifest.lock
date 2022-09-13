@@ -1,16 +1,24 @@
 PODS:
-  - FlowerCocoa (0.1.0)
+  - FlowerCocoa (0.1.0):
+    - SnapKit
+  - SnapKit (4.2.0)
 
 DEPENDENCIES:
   - FlowerCocoa (from `../`)
+  - SnapKit (= 4.2.0)
+
+SPEC REPOS:
+  trunk:
+    - SnapKit
 
 EXTERNAL SOURCES:
   FlowerCocoa:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlowerCocoa: 9e28e8f4ae6393810fcb6885703d205e25e37ee3
+  FlowerCocoa: 24d1ca09703247d9d58115ffa30833df4dfd126e
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
-PODFILE CHECKSUM: 678f39425ebc1d1c8b2dc4d2db9b0f9597143f72
+PODFILE CHECKSUM: 5d09fd28d2fcc2005150ead5b22e7fa1c5c604b0
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

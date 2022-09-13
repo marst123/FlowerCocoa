@@ -16,6 +16,7 @@ public enum Flower_FontState {
     case ultraLight(CGFloat)
     case heavy(CGFloat)
     case black(CGFloat)
+    case replaceFont(String, CGFloat)
     
     var ping: UIFont {
         switch self {
@@ -35,6 +36,8 @@ public enum Flower_FontState {
             return UIFont.systemFont(ofSize: int, weight: .heavy)
         case .black(let int):
             return UIFont.systemFont(ofSize: int, weight: .black)
+        case .replaceFont(let name, let int):
+            return UIFont(name: name, size: int)!
         }
     }
     

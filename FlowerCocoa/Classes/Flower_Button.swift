@@ -70,7 +70,7 @@ public enum Flower_ButtonState {
     case disabled(UIButton)
     
     @discardableResult
-    func title(_ title: String?) -> Self {
+    public func title(_ title: String?) -> Self {
         switch self {
         case .normal(let pSButton):
             pSButton.setTitle(title, for: .normal)
@@ -85,7 +85,7 @@ public enum Flower_ButtonState {
     }
     
     @discardableResult
-    func color(_ color: UIColor?) -> Self {
+    public func color(_ color: UIColor?) -> Self {
         switch self {
         case .normal(let pSButton):
             pSButton.setTitleColor(color, for: .normal)
@@ -100,7 +100,7 @@ public enum Flower_ButtonState {
     }
     
     @discardableResult
-    func attrText(_ attrText: NSAttributedString?) -> Self {
+    public func attrTitle(_ attrText: NSAttributedString?) -> Self {
         switch self {
         case .normal(let pSButton):
             pSButton.setAttributedTitle(attrText, for: .normal)
@@ -115,7 +115,7 @@ public enum Flower_ButtonState {
     }
     
     @discardableResult
-    func image(_ image: UIImage?) -> Self {
+    public func image(_ image: UIImage?) -> Self {
         switch self {
         case .normal(let pSButton):
             pSButton.setImage(image, for: .normal)
@@ -130,7 +130,7 @@ public enum Flower_ButtonState {
     }
     
     @discardableResult
-    func backgroundImage(_ image: UIImage?) -> Self {
+    public func backgroundImage(_ image: UIImage?) -> Self {
         switch self {
         case .normal(let pSButton):
             pSButton.setBackgroundImage(image, for: .normal)
