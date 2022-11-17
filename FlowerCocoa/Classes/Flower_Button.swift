@@ -58,6 +58,12 @@ public extension Link where Base: Flower_Button {
         return self
     }
     
+    @discardableResult
+    func setTag(tag: Int) -> Link {
+        self.base.tag = tag
+        return self
+    }
+    
     // 管理button方法硬编码
     
 }

@@ -32,6 +32,13 @@ public extension Link where Base: Flower_CollectionView {
     }
     
     @discardableResult
+    func register<T: UICollectionViewCell>(viewClass name: T.Type) -> Link {
+        let identifier = String(describing: name)
+        self.base.register(T.self, forCellWithReuseIdentifier: identifier)
+        return self
+    }
+    
+    @discardableResult
     private func registerHeader<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
         let identifier = String(describing: name)
         var bundle: Bundle? = nil
@@ -41,6 +48,15 @@ public extension Link where Base: Flower_CollectionView {
         }
 
         self.base.register(UINib(nibName: identifier, bundle: bundle),
+                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
+                      withReuseIdentifier: identifier)
+        return self
+    }
+    
+    @discardableResult
+    func registerHeader<T: UICollectionReusableView>(viewClass name: T.Type) -> Link {
+        let identifier = String(describing: name)
+        self.base.register(name.self,
                       forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
                       withReuseIdentifier: identifier)
         return self
@@ -62,22 +78,6 @@ public extension Link where Base: Flower_CollectionView {
     }
     
     @discardableResult
-    func register<T: UICollectionViewCell>(viewClass name: T.Type) -> Link {
-        let identifier = String(describing: name)
-        self.base.register(T.self, forCellWithReuseIdentifier: identifier)
-        return self
-    }
-    
-    @discardableResult
-    func registerHeader<T: UICollectionReusableView>(viewClass name: T.Type) -> Link {
-        let identifier = String(describing: name)
-        self.base.register(name.self,
-                      forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader,
-                      withReuseIdentifier: identifier)
-        return self
-    }
-    
-    @discardableResult
     func registerFooter<T: UICollectionReusableView>(viewClass name: T.Type) -> Link {
         let identifier = String(describing: name)
         self.base.register(name.self,
@@ -87,7 +87,6 @@ public extension Link where Base: Flower_CollectionView {
     }
     
 }
-
 
 
 public extension Link where Base: Flower_CollectionViewFlowLayout {
@@ -116,11 +115,10 @@ public extension Link where Base: Flower_CollectionViewFlowLayout {
     }
     
     @discardableResult
-    func estimatedItemSize(_ size: CGSize) -> Link {
+    func estimatedItem(_ size: CGSize) -> Link {
         self.base.estimatedItemSize = size
         return self
     }
     
     
 }
-

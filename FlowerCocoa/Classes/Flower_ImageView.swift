@@ -17,11 +17,5 @@ public extension Link where Base: Flower_ImageView {
         return self
     }
     
-    @discardableResult
-    func contentMode(_ mode: UIView.ContentMode) -> Link {
-        self.base.contentMode = mode
-        return self
-    }
-    
     
 }

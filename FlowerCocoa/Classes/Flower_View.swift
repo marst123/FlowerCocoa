@@ -30,31 +30,31 @@ public extension Link where Base: Flower_View {
         return self
     }
     
-    // 尽量不使用这里处理约束,snapkit很方便,还是保证功能样式与视图坐标分离
-    @discardableResult
-    func multiplierH(_ equalTo: NSLayoutDimension, multiplier: CGFloat) -> Link {
-        self.base.heightAnchor.constraint(equalTo: equalTo, multiplier: multiplier).isActive = true
-        return self
-    }
-    
-    @discardableResult
-    func multiplierW(_ equalTo: NSLayoutDimension, multiplier: CGFloat) -> Link {
-        self.base.widthAnchor.constraint(equalTo: equalTo, multiplier: multiplier).isActive = true
-        return self
-    }
-    
-    @discardableResult
-    func left(_ equalTo: NSLayoutAnchor<NSLayoutXAxisAnchor>, cons: CGFloat) -> Link {
-        self.base.leftAnchor.constraint(equalTo: equalTo, constant: cons).isActive = true
-        return self
-    }
-    
-    @discardableResult
-    func right(_ equalTo: NSLayoutAnchor<NSLayoutXAxisAnchor>, cons: CGFloat) -> Link {
-        self.base.rightAnchor.constraint(equalTo: equalTo, constant: cons).isActive = true
-        return self
-    }
-    
+//    // 尽量不使用这里处理约束,snapkit很方便,还是保证功能样式与视图坐标分离
+//    @discardableResult
+//    func multiplierH(_ equalTo: NSLayoutDimension, multiplier: CGFloat) -> Link {
+//        self.base.heightAnchor.constraint(equalTo: equalTo, multiplier: multiplier).isActive = true
+//        return self
+//    }
+//
+//    @discardableResult
+//    func multiplierW(_ equalTo: NSLayoutDimension, multiplier: CGFloat) -> Link {
+//        self.base.widthAnchor.constraint(equalTo: equalTo, multiplier: multiplier).isActive = true
+//        return self
+//    }
+//
+//    @discardableResult
+//    func left(_ equalTo: NSLayoutAnchor<NSLayoutXAxisAnchor>, cons: CGFloat) -> Link {
+//        self.base.leftAnchor.constraint(equalTo: equalTo, constant: cons).isActive = true
+//        return self
+//    }
+//
+//    @discardableResult
+//    func right(_ equalTo: NSLayoutAnchor<NSLayoutXAxisAnchor>, cons: CGFloat) -> Link {
+//        self.base.rightAnchor.constraint(equalTo: equalTo, constant: cons).isActive = true
+//        return self
+//    }
+//
     @discardableResult
     func size( w: CGFloat, h: CGFloat) -> Link {
         self.base.widthAnchor.constraint(equalToConstant: w).isActive = true
@@ -178,5 +178,6 @@ public extension Link where Base: Flower_View {
         self.base.underline(direction, lineWidth: lineWidth, color: color, inset: inset, equal: equal)
         return self
     }
+    
     
 }

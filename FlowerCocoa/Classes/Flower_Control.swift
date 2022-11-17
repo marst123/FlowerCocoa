@@ -16,8 +16,26 @@ public extension Link where Base: Flower_Control {
     }
     
     @discardableResult
-    func addTarget(_ target: Any?, action: Selector) -> Link {
-        self.base.addTarget(target, action: action, for: .touchUpInside)
+    func addTarget(_ target: Any?, action: Selector, event: UIControl.Event = .touchUpInside) -> Link {
+        self.base.addTarget(target, action: action, for: event)
+        return self
+    }
+    
+    @discardableResult
+    func setAction(event: UIControl.Event = .touchUpInside, action: @escaping CustomActionClosure) -> Link {
+        self.base.setAction(event: event, action: action)
+        return self
+    }
+    
+    @discardableResult
+    func contentVertical(_ alignment: UIControl.ContentVerticalAlignment) -> Link {
+        self.base.contentVerticalAlignment = alignment
+        return self
+    }
+    
+    @discardableResult
+    func contentHorizontal(_ alignment: UIControl.ContentHorizontalAlignment) -> Link {
+        self.base.contentHorizontalAlignment = alignment
         return self
     }
     

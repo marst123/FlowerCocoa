@@ -2,8 +2,8 @@ import UIKit
 
 public extension UIColor {
 
-    class func hex(_ color: String) -> UIColor {
-        return Flower_ColorMode.hex(color).color
+    class func hex(_ color: String, alpha: CGFloat = 1) -> UIColor {
+        return Flower_ColorMode.hex(color, alpha).color
     }
     
     class func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> UIColor {
@@ -14,8 +14,8 @@ public extension UIColor {
 
 public extension CGColor {
     
-    class func hexCG(_ color: String) -> CGColor {
-        return Flower_ColorMode.hex(color).color.cgColor
+    class func hexCG(_ color: String, alpha: CGFloat = 1) -> CGColor {
+        return Flower_ColorMode.hex(color, alpha).color.cgColor
     }
     
     class func rgbCG(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> CGColor {
@@ -27,14 +27,14 @@ public extension CGColor {
 
 public enum Flower_ColorMode {
     case rgb(CGFloat, CGFloat, CGFloat, CGFloat)
-    case hex(String)
+    case hex(String, CGFloat)
     
     var color: UIColor {
         switch self {
         case .rgb(let r, let g, let b, let alpha):
             return UIColor(red: r, green: g, blue: b, alpha: alpha)
-        case .hex(let string):
-            return UIColor(hexString: string)
+        case .hex(let string, let float):
+            return UIColor(hexString: string).withAlphaComponent(float)
         }
     }
 }
