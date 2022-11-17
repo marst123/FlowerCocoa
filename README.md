@@ -22,7 +22,7 @@ pod 'FlowerCocoa'
 
 ## Author
 
-marst123, wangguanyi@xubei.com
+marst123, tianlan2325@qq.com
 
 ## License
 
