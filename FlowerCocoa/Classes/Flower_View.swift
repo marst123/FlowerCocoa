@@ -179,5 +179,39 @@ public extension Link where Base: Flower_View {
         return self
     }
     
+    @discardableResult
+    func addGesture(_ recognizer: UIGestureRecognizer) -> Link {
+        self.base.addGestureRecognizer(recognizer)
+        return self
+    }
+    
+    @discardableResult
+    /// 添加操作手势
+    /// - Parameters:
+    ///   - recognizers:
+    ///   - action:
+    /// - Returns:
+    /// example:
+    /// link.addGesture([UITapGestureRecognizer(), UILongPressGestureRecognizer()]) { sender in
+    /// if sender is UITapGestureRecognizer {
+    ///    print("333333")
+    /// }else {
+    ///    print("444444")
+    /// }
+    ///
+    func addGesture(_ recognizers: [UIGestureRecognizer], action: @escaping CustomGestureClosure) -> Link {
+        self.base.setAction(recognizers: recognizers, action: action)
+        return self
+    }
+    
+    @discardableResult
+    func removeGesture(_ recognizers: [UIGestureRecognizer]) -> Link {
+        for recognizer in recognizers {
+            self.base.removeGestureRecognizer(recognizer)
+        }
+        return self
+    }
+    
+    
     
 }

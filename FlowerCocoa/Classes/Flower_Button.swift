@@ -5,6 +5,12 @@ public typealias Flower_Button = UIButton
 public extension Link where Base: Flower_Button {
     
     @discardableResult
+    func isSelected(_ isSelected: Bool) -> Link {
+        self.base.isSelected = isSelected
+        return self
+    }
+    
+    @discardableResult
     func stateNormal(_ clo: ((Flower_ButtonState) -> ())) -> Link<Base> {
         clo(.normal(self.base))
         return self

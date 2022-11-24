@@ -75,5 +75,28 @@ public extension Link where Base: Flower_TableView {
         return self
     }
     
+    @discardableResult
+    func keyboardDismiss(_ mode: UIScrollView.KeyboardDismissMode) -> Link {
+        self.base.keyboardDismissMode = mode
+        return self
+    }
+    
+    @discardableResult
+    func estimatedRowHeight(_ height: CGFloat) -> Link {
+        self.base.estimatedRowHeight = height
+        return self
+    }
+    
+    @discardableResult
+    func estimatedSectionHeaderHeight(_ height: CGFloat) -> Link {
+        self.base.estimatedSectionHeaderHeight = height
+        return self
+    }
+    
+    @discardableResult
+    func estimatedSectionFooterHeight(_ height: CGFloat) -> Link {
+        self.base.estimatedSectionFooterHeight = height
+        return self
+    }
 
 }

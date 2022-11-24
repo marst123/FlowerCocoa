@@ -22,7 +22,7 @@ public extension Link where Base: Flower_Control {
     }
     
     @discardableResult
-    func setAction(event: UIControl.Event = .touchUpInside, action: @escaping CustomActionClosure) -> Link {
+    func setAction(event: UIControl.Event = .touchUpInside, action: @escaping ClosureControlActionClosure) -> Link {
         self.base.setAction(event: event, action: action)
         return self
     }

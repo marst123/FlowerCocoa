@@ -2,13 +2,20 @@ import UIKit
 
 public typealias Flower_Label = UILabel
 
+public typealias Flower_InsetLabel = InsetLabel
 
 public extension Link where Base: Flower_Label {
 
     
     @discardableResult
-    func titleColor(_ textColor: UIColor?) -> Link {
-        self.base.textColor = textColor
+    func titleColor(_ color: UIColor?) -> Link {
+        self.base.textColor = color
+        return self
+    }
+    
+    @discardableResult
+    func highlightedTextColor(_ color: UIColor?) -> Link {
+        self.base.highlightedTextColor = color
         return self
     }
     
@@ -35,6 +42,7 @@ public extension Link where Base: Flower_Label {
         self.base.attributedText = title
         return self
     }
+
     
     @discardableResult
     func lineBreakMode(_ mode: NSLineBreakMode) -> Link {
@@ -47,6 +55,23 @@ public extension Link where Base: Flower_Label {
         self.base.minimumScaleFactor = scale
         return self
     }
+
+    @discardableResult
+    func isHighlighted(_ isHighlighted: Bool) -> Link {
+        self.base.isHighlighted = isHighlighted
+        return self
+    }
     
-    
+}
+
+
+public extension Link where Base: Flower_InsetLabel {
+    @discardableResult
+    func titleEdges(top: CGFloat, left: CGFloat, bottom: CGFloat, right: CGFloat) -> Link {
+        self.base.textInsets.top = top
+        self.base.textInsets.left = left
+        self.base.textInsets.bottom = bottom
+        self.base.textInsets.right = right
+        return self
+    }
 }
