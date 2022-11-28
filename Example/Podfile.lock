@@ -1,5 +1,5 @@
 PODS:
-  - FlowerCocoa (0.2.1):
+  - FlowerCocoa (0.2.2):
     - SnapKit
   - SnapKit (4.2.0)
 
@@ -16,7 +16,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlowerCocoa: ddc14d6fdeb0e18d805858767cb5268048d56c1c
+  FlowerCocoa: ebde80efd7de8440c01cd77cdad9fa3abb328e32
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
 
 PODFILE CHECKSUM: 5d09fd28d2fcc2005150ead5b22e7fa1c5c604b0

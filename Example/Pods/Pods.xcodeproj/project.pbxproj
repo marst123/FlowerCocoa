@@ -40,12 +40,12 @@
 		77FCBC931E4B756221367D13A7EF85BC /* Typealiases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D8610217E033F12A628571FD3D1684 /* Typealiases.swift */; };
 		79501BFD99E38C2B9943BDC7B77A2668 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 862825875C54874B7F0EA38EF945F117 /* InsetLabel.swift */; };
 		7AB170F0E7450B344DAD9FC89AD6253E /* Pods-FlowerCocoa_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AA74945866FDEFB5D70B7306499C12A4 /* Pods-FlowerCocoa_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7EF41025A649D5D9B0C757801F9839B5 /* NSMutableAttributedString+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+Fat.swift */; };
+		7EF41025A649D5D9B0C757801F9839B5 /* NSMutableAttributedString+KeyStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+KeyStyle.swift */; };
 		87784B592041EBEEEDA2DD0C395AAF33 /* ConstraintRelatableTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */; };
 		96495A421F6499BA215792113E902A5B /* SnapKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */; };
 		9DE099FFDB302687C22F924DC901D5C6 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */; };
-		9EAA249878E7E4D5B713D55E82964038 /* UIButton+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Fat.swift */; };
-		9EFA332D46BA3A35CB5AEC006399D409 /* UIFont+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81FDE803310C987DA20A012686369E9 /* UIFont+Fat.swift */; };
+		9EAA249878E7E4D5B713D55E82964038 /* UIButton+Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Edges.swift */; };
+		9EFA332D46BA3A35CB5AEC006399D409 /* UIFont+Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = C81FDE803310C987DA20A012686369E9 /* UIFont+Weight.swift */; };
 		9F0243B141924DC26FFC6DB8E88BD4D8 /* SnapKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A27CE239FC334FB6D87201C3CD94A872 /* Flower_TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C816B4A5E61893356AC89AECFFF6D687 /* Flower_TextField.swift */; };
 		A6A8596FE3BFA648844DB9DA8BF7E8FA /* ConstraintPriority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */; };
@@ -64,9 +64,10 @@
 		D5E79002F6125A1894D9B2A11A268A5D /* ConstraintLayoutGuide+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4230A725EDA6C25944C70BFF90CCC3F4 /* ConstraintLayoutGuide+Extensions.swift */; };
 		D6347E87071ED4354ED021D4B8742947 /* ConstraintMakerPriortizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */; };
 		D667D29CF92F4BB26EEC684A4D50DC25 /* ConstraintConstantTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F10AA484FE3CE9A074FF4CA855D1C7 /* ConstraintConstantTarget.swift */; };
+		D70B56372933B81A00FE4FAC /* UIButton+Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = D70B56362933B81A00FE4FAC /* UIButton+Action.swift */; };
 		D9E2914885F6B52C5F33CA8D9077D043 /* ConstraintMakerFinalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3146B382C3292E28917B8CF4356923 /* ConstraintMakerFinalizable.swift */; };
 		DC14C46F32159C8B79F0486CF67397C7 /* ConstraintPriorityTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */; };
-		DD96603C688EADAC22D3BE0B8464AAC3 /* UIColor+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209113C3A814B1063F0A849747905D31 /* UIColor+Fat.swift */; };
+		DD96603C688EADAC22D3BE0B8464AAC3 /* UIColor+HexAndRGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 209113C3A814B1063F0A849747905D31 /* UIColor+HexAndRGB.swift */; };
 		E0094E1CABB41F85D1248B72943056A9 /* Pods-FlowerCocoa_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 840A83CE24E40587AC02AC2B13E54D30 /* Pods-FlowerCocoa_Tests-dummy.m */; };
 		E079BAB9AE1CF42DE3B9D058781D4651 /* LayoutConstraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B8B35502B427E3F46D5237C681DCB /* LayoutConstraint.swift */; };
 		EBE43D406F346A2E5601C9DAD0FFD1DD /* ConstraintViewDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09C2F3330EB4A39DC3B20B40D8981F66 /* ConstraintViewDSL.swift */; };
@@ -74,7 +75,7 @@
 		EE5DDD13274FB29626745597D5CA7650 /* Flower_FontFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E2EDCF78871A7372D3AD204A2C4BFC /* Flower_FontFormat.swift */; };
 		F6C73D90E292DF49ECB2A6E072DB040A /* ConstraintInsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */; };
 		F7F882705CE6E15FA383284A9E5A8FEF /* ConstraintLayoutSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */; };
-		F8BB7CBB51910A78F55FB4ED8F6E9404 /* UIImage+Fat.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B3180C7079F81098A72108F69BA31 /* UIImage+Fat.swift */; };
+		F8BB7CBB51910A78F55FB4ED8F6E9404 /* UIImage+Get.swift in Sources */ = {isa = PBXBuildFile; fileRef = A63B3180C7079F81098A72108F69BA31 /* UIImage+Get.swift */; };
 		FA1320AC096B9B74D2F546DFF9ACD231 /* ConstraintDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */; };
 		FE7FFF848B7BC4CF975BF63A36FADB8E /* Flower_ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5352607C99163E3172877441F9E52064 /* Flower_ImageView.swift */; };
 		FE8CD9FBC504D288DE175C38C77B0406 /* ConstraintMakerExtendable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7478F64EB1BC7B207D2133307B4B5015 /* ConstraintMakerExtendable.swift */; };
@@ -125,14 +126,14 @@
 		1C10E6CB6F182DF02D187ADCD3969609 /* FlowerCocoa-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FlowerCocoa-dummy.m"; sourceTree = "<group>"; };
 		1C81B0C23EADA502AA9895105ACF93AD /* ConstraintInsets.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsets.swift; path = Source/ConstraintInsets.swift; sourceTree = "<group>"; };
 		1CECF2DC5B0A92393688A1F79BCCF7A3 /* Pods-FlowerCocoa_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Example-Info.plist"; sourceTree = "<group>"; };
-		209113C3A814B1063F0A849747905D31 /* UIColor+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+Fat.swift"; sourceTree = "<group>"; };
+		209113C3A814B1063F0A849747905D31 /* UIColor+HexAndRGB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+HexAndRGB.swift"; sourceTree = "<group>"; };
 		22E01FA87E7E1EB2C575C22C84AB32B6 /* Flower_Control.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_Control.swift; path = FlowerCocoa/Classes/Flower_Control.swift; sourceTree = "<group>"; };
 		27A2EB6F833D40D68706478E3530EF42 /* Flower_CollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_CollectionView.swift; path = FlowerCocoa/Classes/Flower_CollectionView.swift; sourceTree = "<group>"; };
 		28F22BA6AB5A937C5746FF37C2AC6588 /* Pods-FlowerCocoa_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowerCocoa_Tests.modulemap"; sourceTree = "<group>"; };
 		29693EC049D6AC1AE94A7B743D01A9AB /* SnapKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.debug.xcconfig; sourceTree = "<group>"; };
 		2D12C19916EBD36CD2B27959833FCFCB /* Pods-FlowerCocoa_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Example.release.xcconfig"; sourceTree = "<group>"; };
 		302FC44AE4E10A47B0404CE8B8D1CF1A /* FlowerCocoa */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FlowerCocoa; path = FlowerCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		307B377C8D01C9A4A1303755C9D1166D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		307B377C8D01C9A4A1303755C9D1166D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		37F1A25F3C9883F6A0A4428D8AFC44B2 /* ConstraintPriority.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriority.swift; path = Source/ConstraintPriority.swift; sourceTree = "<group>"; };
 		3B1FC11E0EEF67C3E03205162C59857D /* Flower_TextView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TextView.swift; path = FlowerCocoa/Classes/Flower_TextView.swift; sourceTree = "<group>"; };
 		3B569D02FFB2C8143A71D4511C970AC4 /* SnapKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-prefix.pch"; sourceTree = "<group>"; };
@@ -140,7 +141,7 @@
 		42EDC7C7A525E5D5191CA0B7A731184D /* SnapKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SnapKit-umbrella.h"; sourceTree = "<group>"; };
 		460FE348E93FFA86EF28B0DE4C0F4A7D /* ConstraintLayoutGuide.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutGuide.swift; path = Source/ConstraintLayoutGuide.swift; sourceTree = "<group>"; };
 		46F8B378A0D395518DE2DD11AE4B6F98 /* ConstraintMaker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMaker.swift; path = Source/ConstraintMaker.swift; sourceTree = "<group>"; };
-		4740E854B7CBEBFA006B859C9F10C9EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4740E854B7CBEBFA006B859C9F10C9EF /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		482F82F33689F16E85E52807892D3A0B /* Flower_TableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TableView.swift; path = FlowerCocoa/Classes/Flower_TableView.swift; sourceTree = "<group>"; };
 		4C117F931D150283B673CDCDE7588B41 /* Pods-FlowerCocoa_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		4D389336757F8762225F7430C05DB6CD /* FlowerCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FlowerCocoa-Info.plist"; sourceTree = "<group>"; };
@@ -149,12 +150,12 @@
 		51566D0AF41FEBB1DD1BB7CA86B07225 /* ConstraintMultiplierTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMultiplierTarget.swift; path = Source/ConstraintMultiplierTarget.swift; sourceTree = "<group>"; };
 		51FC8598DC28CBAD9AF2F2BA255F9622 /* Pods-FlowerCocoa_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FlowerCocoa_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5352607C99163E3172877441F9E52064 /* Flower_ImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_ImageView.swift; path = FlowerCocoa/Classes/Flower_ImageView.swift; sourceTree = "<group>"; };
-		54ECAE7E0C3A0045C6C6D030417D082C /* Pods-FlowerCocoa_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlowerCocoa_Example"; path = Pods_FlowerCocoa_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerCocoa_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5975457FA577D667D0257900DF1D4FDD /* ConstraintView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ConstraintView+Extensions.swift"; path = "Source/ConstraintView+Extensions.swift"; sourceTree = "<group>"; };
-		59DE05CCD09DD0A41F7304ECB2153258 /* FlowerCocoa.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = FlowerCocoa.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		59DE05CCD09DD0A41F7304ECB2153258 /* FlowerCocoa.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = FlowerCocoa.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6199B0E33536DD7E23A71C2A1DFA3CB3 /* ConstraintPriorityTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintPriorityTarget.swift; path = Source/ConstraintPriorityTarget.swift; sourceTree = "<group>"; };
 		61CD29244436323CB79E5F9F8ABB3AF6 /* FlowerCocoa-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FlowerCocoa-umbrella.h"; sourceTree = "<group>"; };
-		6AF2C037D07F411EE415C99D4C2CA96D /* Pods-FlowerCocoa_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FlowerCocoa_Tests"; path = Pods_FlowerCocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlowerCocoa_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3E79C8EAF9A554FBD854A1755E9407 /* Pods-FlowerCocoa_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowerCocoa_Tests-umbrella.h"; sourceTree = "<group>"; };
 		6CACD95C459F4D08F9C1E57893F55090 /* ConstraintDescription.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDescription.swift; path = Source/ConstraintDescription.swift; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -173,16 +174,16 @@
 		91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintOffsetTarget.swift; path = Source/ConstraintOffsetTarget.swift; sourceTree = "<group>"; };
 		9580987BCF00D4876604FBF3D6BF4717 /* Pods-FlowerCocoa_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FlowerCocoa_Example.modulemap"; sourceTree = "<group>"; };
 		95CD0FB239B7B0D75A627FE2A47DDED0 /* UIView+Gesture.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Gesture.swift"; sourceTree = "<group>"; };
-		9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Fat.swift"; sourceTree = "<group>"; };
+		9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Edges.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+Edges.swift"; sourceTree = "<group>"; };
 		979486118B3E90C08386079D57962701 /* SnapKit */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SnapKit; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Fat.swift"; sourceTree = "<group>"; };
+		9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+KeyStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+KeyStyle.swift"; sourceTree = "<group>"; };
 		9CDAA3CBC7FB47CCECEA5AE18C7B5F8B /* Flower_StackView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_StackView.swift; path = FlowerCocoa/Classes/Flower_StackView.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F11C270C2F365B90C9EBB03207FDCA0 /* Pods-FlowerCocoa_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FlowerCocoa_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		9F83B8A1B02E0451B0FF84304C88FD26 /* FlowerCocoa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowerCocoa.debug.xcconfig; sourceTree = "<group>"; };
 		A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintConfig.swift; path = Source/ConstraintConfig.swift; sourceTree = "<group>"; };
 		A5BC50AFAD455960236E4D3EF603CE86 /* Pods-FlowerCocoa_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FlowerCocoa_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A63B3180C7079F81098A72108F69BA31 /* UIImage+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Fat.swift"; sourceTree = "<group>"; };
+		A63B3180C7079F81098A72108F69BA31 /* UIImage+Get.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+Get.swift"; sourceTree = "<group>"; };
 		AA74945866FDEFB5D70B7306499C12A4 /* Pods-FlowerCocoa_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FlowerCocoa_Example-umbrella.h"; sourceTree = "<group>"; };
 		AB1B5C574EC29B2A222C6281A4A0B3BC /* SnapKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SnapKit-dummy.m"; sourceTree = "<group>"; };
 		AD6E9D9A9A36CAC6827C30D02B1B414B /* Constraint.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Constraint.swift; path = Source/Constraint.swift; sourceTree = "<group>"; };
@@ -190,7 +191,7 @@
 		B8BEF98EFE5AA5B53394A45BAC472945 /* SnapKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SnapKit.release.xcconfig; sourceTree = "<group>"; };
 		BAA070155DE459F51A650261C10EA9CB /* ConstraintDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintDSL.swift; path = Source/ConstraintDSL.swift; sourceTree = "<group>"; };
 		C816B4A5E61893356AC89AECFFF6D687 /* Flower_TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_TextField.swift; path = FlowerCocoa/Classes/Flower_TextField.swift; sourceTree = "<group>"; };
-		C81FDE803310C987DA20A012686369E9 /* UIFont+Fat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Fat.swift"; sourceTree = "<group>"; };
+		C81FDE803310C987DA20A012686369E9 /* UIFont+Weight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+Weight.swift"; sourceTree = "<group>"; };
 		C89552C29B3090667057D8E56D2C3D81 /* ConstraintLayoutSupportDSL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupportDSL.swift; path = Source/ConstraintLayoutSupportDSL.swift; sourceTree = "<group>"; };
 		C8D6B4E640B3D09C454814F36856E2EE /* ConstraintLayoutSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintLayoutSupport.swift; path = Source/ConstraintLayoutSupport.swift; sourceTree = "<group>"; };
 		CBED13A85933E487E106C5DF1F57DA2E /* UIView+Line.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Line.swift"; sourceTree = "<group>"; };
@@ -200,6 +201,7 @@
 		D288AA18588587342187C5E985E32808 /* FlowerCocoa.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FlowerCocoa.modulemap; sourceTree = "<group>"; };
 		D2E6532B7A94FB00AC80D1AD58CFBC29 /* Flower_ScrollView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flower_ScrollView.swift; path = FlowerCocoa/Classes/Flower_ScrollView.swift; sourceTree = "<group>"; };
 		D3DD21F59E9ABB6CFA8B14FAEE0B52DA /* ConstraintMakerPriortizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintMakerPriortizable.swift; path = Source/ConstraintMakerPriortizable.swift; sourceTree = "<group>"; };
+		D70B56362933B81A00FE4FAC /* UIButton+Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Action.swift"; sourceTree = "<group>"; };
 		DA5597D051B6350A61151221E8BEE0D0 /* ConstraintInsetTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintInsetTarget.swift; path = Source/ConstraintInsetTarget.swift; sourceTree = "<group>"; };
 		DBB01221055BDABDD47999C671F4A9BD /* ConstraintItem.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintItem.swift; path = Source/ConstraintItem.swift; sourceTree = "<group>"; };
 		DCC59D5A4EE051C600DC92CF84B952C7 /* Link.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Link.swift; path = FlowerCocoa/Classes/Link.swift; sourceTree = "<group>"; };
@@ -270,8 +272,8 @@
 			isa = PBXGroup;
 			children = (
 				302FC44AE4E10A47B0404CE8B8D1CF1A /* FlowerCocoa */,
-				54ECAE7E0C3A0045C6C6D030417D082C /* Pods-FlowerCocoa_Example */,
-				6AF2C037D07F411EE415C99D4C2CA96D /* Pods-FlowerCocoa_Tests */,
+				54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */,
+				6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */,
 				979486118B3E90C08386079D57962701 /* SnapKit */,
 			);
 			name = Products;
@@ -341,12 +343,13 @@
 		745A394158CCCB25F4A9B3BB64DF0CF8 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+Fat.swift */,
-				9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Fat.swift */,
-				209113C3A814B1063F0A849747905D31 /* UIColor+Fat.swift */,
-				C81FDE803310C987DA20A012686369E9 /* UIFont+Fat.swift */,
-				A63B3180C7079F81098A72108F69BA31 /* UIImage+Fat.swift */,
+				9C00C069918F8A6BBF3835431DE5F572 /* NSMutableAttributedString+KeyStyle.swift */,
+				9633B545478C85846D29A3A3D2CC8D51 /* UIButton+Edges.swift */,
+				209113C3A814B1063F0A849747905D31 /* UIColor+HexAndRGB.swift */,
+				C81FDE803310C987DA20A012686369E9 /* UIFont+Weight.swift */,
+				A63B3180C7079F81098A72108F69BA31 /* UIImage+Get.swift */,
 				95CD0FB239B7B0D75A627FE2A47DDED0 /* UIView+Gesture.swift */,
+				D70B56362933B81A00FE4FAC /* UIButton+Action.swift */,
 				CBED13A85933E487E106C5DF1F57DA2E /* UIView+Line.swift */,
 			);
 			name = Extension;
@@ -443,7 +446,6 @@
 				4DCD15E7A2AFE53263B4335C9B3D9813 /* UILayoutSupport+Extensions.swift */,
 				D28E246011041898C1EA6C3AAF01971C /* Support Files */,
 			);
-			name = SnapKit;
 			path = SnapKit;
 			sourceTree = "<group>";
 		};
@@ -555,7 +557,7 @@
 			);
 			name = "Pods-FlowerCocoa_Example";
 			productName = Pods_FlowerCocoa_Example;
-			productReference = 54ECAE7E0C3A0045C6C6D030417D082C /* Pods-FlowerCocoa_Example */;
+			productReference = 54ECAE7E0C3A0045C6C6D030417D082C /* Pods_FlowerCocoa_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		87A602630C3A80C187C223DB0ED41C2E /* FlowerCocoa */ = {
@@ -593,7 +595,7 @@
 			);
 			name = "Pods-FlowerCocoa_Tests";
 			productName = Pods_FlowerCocoa_Tests;
-			productReference = 6AF2C037D07F411EE415C99D4C2CA96D /* Pods-FlowerCocoa_Tests */;
+			productReference = 6AF2C037D07F411EE415C99D4C2CA96D /* Pods_FlowerCocoa_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -728,14 +730,15 @@
 				2DA9AB3C84DFA7A7E0FE7B3C5865AB7A /* Flower_View.swift in Sources */,
 				A958C2A2D2EBE7B2B05E2C9BD64F09C9 /* FlowerCocoa-dummy.m in Sources */,
 				79501BFD99E38C2B9943BDC7B77A2668 /* InsetLabel.swift in Sources */,
+				D70B56372933B81A00FE4FAC /* UIButton+Action.swift in Sources */,
 				49075693F23ED226E75F75C196FA151B /* Link.swift in Sources */,
 				037D1EF8656D20ECC7B058754BC5A23B /* LinkCompatible.swift in Sources */,
-				7EF41025A649D5D9B0C757801F9839B5 /* NSMutableAttributedString+Fat.swift in Sources */,
+				7EF41025A649D5D9B0C757801F9839B5 /* NSMutableAttributedString+KeyStyle.swift in Sources */,
 				0FB5C2DBEF55F0F1421E010BC22C341A /* Typealias_block.swift in Sources */,
-				9EAA249878E7E4D5B713D55E82964038 /* UIButton+Fat.swift in Sources */,
-				DD96603C688EADAC22D3BE0B8464AAC3 /* UIColor+Fat.swift in Sources */,
-				9EFA332D46BA3A35CB5AEC006399D409 /* UIFont+Fat.swift in Sources */,
-				F8BB7CBB51910A78F55FB4ED8F6E9404 /* UIImage+Fat.swift in Sources */,
+				9EAA249878E7E4D5B713D55E82964038 /* UIButton+Edges.swift in Sources */,
+				DD96603C688EADAC22D3BE0B8464AAC3 /* UIColor+HexAndRGB.swift in Sources */,
+				9EFA332D46BA3A35CB5AEC006399D409 /* UIFont+Weight.swift in Sources */,
+				F8BB7CBB51910A78F55FB4ED8F6E9404 /* UIImage+Get.swift in Sources */,
 				2BBFED6A5E5D39987FB38D2BA84FC959 /* UIView+Gesture.swift in Sources */,
 				C4275A183E062D2095DE8322FBDD4506 /* UIView+Line.swift in Sources */,
 			);
@@ -932,8 +935,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
