@@ -13,7 +13,7 @@
 		061FD5E3B76DD358CAFC2EC656A88841 /* Flower_Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAF6F226BC94C40F03D08F332A5200D /* Flower_Button.swift */; };
 		076C29E4CC7FDA09B9365964AB1E3C7D /* Flower_TextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1FC11E0EEF67C3E03205162C59857D /* Flower_TextView.swift */; };
 		0EC945EDAC603516F4F47A660DF4C412 /* ConstraintConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3499D06B7741051669EFC6E6A929A57 /* ConstraintConfig.swift */; };
-		0FB5C2DBEF55F0F1421E010BC22C341A /* Typealias_block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A4601726426DD701706EE250DCAC3 /* Typealias_block.swift */; };
+		0FB5C2DBEF55F0F1421E010BC22C341A /* LinkTypealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = 861A4601726426DD701706EE250DCAC3 /* LinkTypealias.swift */; };
 		175671D0BA2D85857EAED174632CF406 /* ConstraintLayoutGuideDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7413D1E3B3849A8B98CECBCB1E3EA510 /* ConstraintLayoutGuideDSL.swift */; };
 		17AC320D1ADB54A4C395D141DA49E79C /* LayoutConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00EFECCF7F4E78B3021A97741173FC2F /* LayoutConstraintItem.swift */; };
 		19505B15F9668A12163A780C1EAB6335 /* ConstraintOffsetTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91102F716DCE9969F79474488AEA2BFD /* ConstraintOffsetTarget.swift */; };
@@ -166,7 +166,7 @@
 		807F5279ECA1E77BEC4455F1645BF6D7 /* ConstraintRelatableTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelatableTarget.swift; path = Source/ConstraintRelatableTarget.swift; sourceTree = "<group>"; };
 		840A83CE24E40587AC02AC2B13E54D30 /* Pods-FlowerCocoa_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FlowerCocoa_Tests-dummy.m"; sourceTree = "<group>"; };
 		848E9BA38AE7A77B37C78B343E836974 /* SnapKit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SnapKit-Info.plist"; sourceTree = "<group>"; };
-		861A4601726426DD701706EE250DCAC3 /* Typealias_block.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Typealias_block.swift; path = FlowerCocoa/Classes/Typealias_block.swift; sourceTree = "<group>"; };
+		861A4601726426DD701706EE250DCAC3 /* LinkTypealias.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LinkTypealias.swift; path = FlowerCocoa/Classes/LinkTypealias.swift; sourceTree = "<group>"; };
 		862825875C54874B7F0EA38EF945F117 /* InsetLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		88E206D0819BC5E4C027CCCD3088F8D5 /* FlowerCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FlowerCocoa.release.xcconfig; sourceTree = "<group>"; };
 		8C80000E1CA4369B2E82035A1825982D /* ConstraintRelation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConstraintRelation.swift; path = Source/ConstraintRelation.swift; sourceTree = "<group>"; };
@@ -306,7 +306,7 @@
 				4EC4773FB1F63D00F4F2075EFF6E000D /* Flower_View.swift */,
 				DCC59D5A4EE051C600DC92CF84B952C7 /* Link.swift */,
 				D14A7761EB20F317BD883900FF6E55CA /* LinkCompatible.swift */,
-				861A4601726426DD701706EE250DCAC3 /* Typealias_block.swift */,
+				861A4601726426DD701706EE250DCAC3 /* LinkTypealias.swift */,
 				A923627D979EC4ABE7BEE9C35C1D3A6C /* Class */,
 				745A394158CCCB25F4A9B3BB64DF0CF8 /* Extension */,
 				9CBAF057D9780630DF0A7C37922A297A /* Pod */,
@@ -734,7 +734,7 @@
 				49075693F23ED226E75F75C196FA151B /* Link.swift in Sources */,
 				037D1EF8656D20ECC7B058754BC5A23B /* LinkCompatible.swift in Sources */,
 				7EF41025A649D5D9B0C757801F9839B5 /* NSMutableAttributedString+KeyStyle.swift in Sources */,
-				0FB5C2DBEF55F0F1421E010BC22C341A /* Typealias_block.swift in Sources */,
+				0FB5C2DBEF55F0F1421E010BC22C341A /* LinkTypealias.swift in Sources */,
 				9EAA249878E7E4D5B713D55E82964038 /* UIButton+Edges.swift in Sources */,
 				DD96603C688EADAC22D3BE0B8464AAC3 /* UIColor+HexAndRGB.swift in Sources */,
 				9EFA332D46BA3A35CB5AEC006399D409 /* UIFont+Weight.swift in Sources */,

@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_TextView = UITextView
 
 public extension Link where Base: Flower_TextView {
     @discardableResult

@@ -1,7 +1,5 @@
 import UIKit
 
-public typealias Flower_ImageView = UIImageView
-
 
 public extension Link where Base: Flower_ImageView {
 

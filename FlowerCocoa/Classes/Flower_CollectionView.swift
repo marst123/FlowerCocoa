@@ -1,8 +1,5 @@
 import UIKit
 
-public typealias Flower_CollectionView = UICollectionView
-
-public typealias Flower_CollectionViewFlowLayout = UICollectionViewFlowLayout
 
 public extension Link where Base: Flower_CollectionView {
     

@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_TableView = UITableView
 
 public extension Link where Base: Flower_TableView {
     

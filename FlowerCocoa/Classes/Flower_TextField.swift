@@ -4,8 +4,6 @@ public enum TextFieldTrait { }
 public enum KeyBoardTrait { }
 
 
-public typealias Flower_TextField = UITextField
-
 public extension Link where Base: Flower_TextField {
     
     @discardableResult

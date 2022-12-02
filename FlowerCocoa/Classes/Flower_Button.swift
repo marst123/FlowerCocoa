@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_Button = UIButton
 
 public extension Link where Base: Flower_Button {
     

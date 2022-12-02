@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_PageControl = UIPageControl
 
 public extension Link where Base: Flower_PageControl {
     

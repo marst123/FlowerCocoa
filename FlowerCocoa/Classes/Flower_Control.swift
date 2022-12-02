@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_Control = UIControl
 
 public extension Link where Base: Flower_Control {
     @discardableResult

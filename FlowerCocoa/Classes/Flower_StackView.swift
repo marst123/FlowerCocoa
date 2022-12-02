@@ -1,7 +1,5 @@
 import UIKit
 
-public typealias Flower_StackView = UIStackView
-
 public extension Link where Base: Flower_StackView {
     
     @discardableResult

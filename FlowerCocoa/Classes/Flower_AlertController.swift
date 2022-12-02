@@ -1,17 +1,6 @@
-//
-//  Flower_AlertController.swift
-//  CampYouXi
-//
-//  Created by zhuxiang on 2022/11/17.
-//
-
 import Foundation
 import UIKit
 
-
-public typealias Flower_AlertController = UIAlertController
-
-public typealias Flower_AlertAction = UIAlertAction
 
 public extension Link where Base: Flower_AlertController {
     

@@ -1,8 +1,5 @@
 import UIKit
 
-public typealias Flower_Label = UILabel
-
-public typealias Flower_InsetLabel = InsetLabel
 
 public extension Link where Base: Flower_Label {
 

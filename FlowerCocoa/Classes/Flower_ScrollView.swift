@@ -1,6 +1,5 @@
 import UIKit
 
-public typealias Flower_ScrollView = UIScrollView
 
 public extension Link where Base: Flower_ScrollView {
     @discardableResult
