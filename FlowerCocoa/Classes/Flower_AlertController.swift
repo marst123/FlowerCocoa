@@ -1,16 +1,15 @@
-import Foundation
 import UIKit
 
 
 public extension Link where Base: Flower_AlertController {
     
-    // 具有初始化方法 convenience init
-    
+    /// 标题
     func setTitle(_ title: String?) -> Link {
         self.base.title = title
         return self
     }
     
+    /// 内容
     func setMessage(_ message: String?) -> Link {
         self.base.message = message
         return self
@@ -35,8 +34,6 @@ public extension Link where Base: Flower_AlertController {
 
 
 public extension Link where Base: Flower_AlertAction {
-    
-    // 具有初始化方法 convenience init
     
     func isEnabled(_ enabled: Bool) -> Link {
         self.base.isEnabled = enabled

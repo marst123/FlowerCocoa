@@ -6,61 +6,49 @@ public enum KeyBoardTrait { }
 
 public extension Link where Base: Flower_TextField {
     
+    /// 文本视图的代理
     @discardableResult
     func delegate(_ delegate: UITextFieldDelegate?) -> Link {
         self.base.delegate = delegate
         return self
     }
     
+    /// 文本框样式，例如 none、line、bezel、roundedRect
     @discardableResult
     func borderStyle(_ borderStyle: UITextField.BorderStyle) -> Link {
         self.base.borderStyle = borderStyle
         return self
     }
     
+    /// 左侧视图的显示模式
     @discardableResult
     func leftViewMode(_ leftViewMode: UITextField.ViewMode) -> Link {
         self.base.leftViewMode = leftViewMode
         return self
     }
     
+    /// 左侧视图
     @discardableResult
     func leftView(_ leftView: UIView?) -> Link {
         self.base.leftView = leftView
         return self
     }
     
+    /// 右侧视图的显示模式
     @discardableResult
     func rightViewMode(_ rightViewMode: UITextField.ViewMode) -> Link {
         self.base.rightViewMode = rightViewMode
         return self
     }
     
+    /// 右侧视图
     @discardableResult
     func rightView(_ rightView: UIView?) -> Link {
         self.base.rightView = rightView
         return self
     }
     
-    @discardableResult
-    func secureTextEntry(_ secureTextEntry: Bool) -> Link {
-        self.base.isSecureTextEntry = secureTextEntry
-        return self
-    }
-    
-    @discardableResult
-    func keyboardType(_ keyboardType: UIKeyboardType) -> Link {
-        self.base.keyboardType = keyboardType
-        return self
-    }
-    
-    @discardableResult
-    func returnKeyType(_ returnKeyType: UIReturnKeyType) -> Link {
-        self.base.returnKeyType = returnKeyType
-        return self
-    }
-    
-    /// SwifterSwift: Clear text.
+    /// 文本清除
     @discardableResult
     func clear() -> Link {
         self.base.text = ""
@@ -68,7 +56,7 @@ public extension Link where Base: Flower_TextField {
         return self
     }
 
-    /// SwifterSwift: Set placeholder text color.
+    /// 占位文本和文本颜色
     @discardableResult
     func placeholder(_ text: String, _ color: UIColor) -> Link {
         if !text.isEmpty {
@@ -78,9 +66,7 @@ public extension Link where Base: Flower_TextField {
         return self
     }
 
-    /// SwifterSwift: Add padding to the left of the textfield rect.
-    ///
-    /// - Parameter padding: amount of padding to apply to the left of the textfield rect.
+    /// 左侧文本填充区域
     @discardableResult
     func paddingLeft(_ padding: CGFloat) -> Link {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: padding, height: self.base.frame.height))
@@ -89,11 +75,7 @@ public extension Link where Base: Flower_TextField {
         return self
     }
 
-    /// SwifterSwift: Add padding to the left of the textfield rect.
-    ///
-    /// - Parameters:
-    ///   - image: left image
-    ///   - padding: amount of padding between icon and the left of textfield
+    /// 左侧图片填充区域
     @discardableResult
     func paddingLeftIcon(_ image: UIImage, padding: CGFloat) -> Link {
         let imageView = UIImageView(image: image)

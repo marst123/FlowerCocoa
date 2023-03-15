@@ -1,13 +1,19 @@
 import UIKit
 
 public enum ButtonEdgeInsetsStyle {
+    
     case imageTopWithTitleBottom    // image在上，label在下
+    
     case imageLeftWithTitleRight    // image在左，label在右
+    
     case imageBottomWithTitleTop    // image在下，label在上
+    
     case imageRightWithTitleLeft    // image在右，label在左
 }
 
-extension UIButton {
+
+// MARK: 边距
+public extension UIButton {
     
     /// 控制Button内容布局
     func layoutEdges(style: ButtonEdgeInsetsStyle, space:CGFloat) {

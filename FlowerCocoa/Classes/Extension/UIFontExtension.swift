@@ -1,24 +1,26 @@
 import UIKit
 
-public extension UIFont {
-    class func ping(_ state: Flower_FontState) -> UIFont {
-        return state.ping
-    }
-}
-
 public enum Flower_FontState {
 
     case bold(CGFloat)
+    
     case light(CGFloat)
+    
     case regular(CGFloat)
+    
     case medium(CGFloat)
+    
     case semibold(CGFloat)
+    
     case ultraLight(CGFloat)
+    
     case heavy(CGFloat)
+    
     case black(CGFloat)
+    
     case replaceFont(String, CGFloat)
     
-    var ping: UIFont {
+    public var ping: UIFont {
         switch self {
         case .bold(let int):
             return UIFont.systemFont(ofSize: int, weight: .bold)
@@ -44,7 +46,12 @@ public enum Flower_FontState {
 }
 
 
-
+// MARK: 字号
+public extension UIFont {
+    class func ping(_ state: Flower_FontState) -> UIFont {
+        return state.ping
+    }
+}
 
 
 

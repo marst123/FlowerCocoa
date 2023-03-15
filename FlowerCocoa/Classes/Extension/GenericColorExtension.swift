@@ -1,35 +1,12 @@
 import UIKit
 
-public extension UIColor {
-
-    class func hex(_ color: String, alpha: CGFloat = 1) -> UIColor {
-        return Flower_ColorMode.hex(color, alpha).color
-    }
-    
-    class func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> UIColor {
-        return Flower_ColorMode.rgb(r, g, b, alpha).color
-    }
-    
-}
-
-public extension CGColor {
-    
-    class func hexCG(_ color: String, alpha: CGFloat = 1) -> CGColor {
-        return Flower_ColorMode.hex(color, alpha).color.cgColor
-    }
-    
-    class func rgbCG(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> CGColor {
-        return Flower_ColorMode.rgb(r, g, b, alpha).color.cgColor
-    }
-    
-}
-
-
 public enum Flower_ColorMode {
+    
     case rgb(CGFloat, CGFloat, CGFloat, CGFloat)
+    
     case hex(String, CGFloat)
     
-    var color: UIColor {
+    public var color: UIColor {
         switch self {
         case .rgb(let r, let g, let b, let alpha):
             return UIColor(red: r, green: g, blue: b, alpha: alpha)
@@ -40,21 +17,7 @@ public enum Flower_ColorMode {
 }
 
 
-extension UIColor {
-    
-    public func toImage() -> UIImage {
-        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
-        UIGraphicsBeginImageContext(rect.size)
-        let context = UIGraphicsGetCurrentContext()
-        context?.setFillColor(self.cgColor)
-        context?.fill(rect)
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        return image ?? UIImage()
-    }
-    
-}
-
+// MARK: UIColor - convenience init
 extension UIColor {
     
     public convenience init(hexString: String) {
@@ -120,4 +83,49 @@ extension UIColor {
         getRed(&r, green: &g, blue: &b, alpha: &a)
         return (r, g, b, a)
     }
+}
+
+
+// MARK: UIColor - hex/rgb
+public extension UIColor {
+
+    class func hex(_ color: String, alpha: CGFloat = 1) -> UIColor {
+        return Flower_ColorMode.hex(color, alpha).color
+    }
+    
+    class func rgb(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> UIColor {
+        return Flower_ColorMode.rgb(r, g, b, alpha).color
+    }
+    
+}
+
+
+// MARK: CGColor - hex/rgb
+public extension CGColor {
+    
+    class func hexCG(_ color: String, alpha: CGFloat = 1) -> CGColor {
+        return Flower_ColorMode.hex(color, alpha).color.cgColor
+    }
+    
+    class func rgbCG(_ r: CGFloat, _ g: CGFloat, _ b: CGFloat,_ alpha: CGFloat) -> CGColor {
+        return Flower_ColorMode.rgb(r, g, b, alpha).color.cgColor
+    }
+    
+}
+
+
+// MARK: 转Image
+extension UIColor {
+    
+    public func toImage() -> UIImage {
+        let rect = CGRect(x: 0.0, y: 0.0, width: 1.0, height: 1.0)
+        UIGraphicsBeginImageContext(rect.size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(self.cgColor)
+        context?.fill(rect)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return image ?? UIImage()
+    }
+    
 }

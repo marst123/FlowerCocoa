@@ -2,21 +2,11 @@ import UIKit
 
 
 public extension Link where Base: Flower_TextView {
+    
+    /// 文本视图的代理
     @discardableResult
     func delegate(_ delegate: UITextViewDelegate?) -> Link {
         self.base.delegate = delegate
-        return self
-    }
-    
-    @discardableResult
-    func keyboardType(_ keyboardType: UIKeyboardType) -> Link {
-        self.base.keyboardType = keyboardType
-        return self
-    }
-    
-    @discardableResult
-    func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Link {
-        self.base.dataDetectorTypes = dataDetectorTypes
         return self
     }
     
@@ -27,21 +17,21 @@ public extension Link where Base: Flower_TextView {
         return self
     }
     
-    /// 是否允许滚动, 默认true
+    /// 文本匹配，实现超链接
     @discardableResult
-    func isScroll(_ isEnabled: Bool) -> Link {
-        self.base.isScrollEnabled = isEnabled
+    func dataDetectorTypes(_ dataDetectorTypes: UIDataDetectorTypes) -> Link {
+        self.base.dataDetectorTypes = dataDetectorTypes
         return self
     }
     
-    /// 是否允许滚动, 默认true
+    /// 文本内边距
     @discardableResult
     func edges(_ inset: UIEdgeInsets) -> Link {
         self.base.textContainerInset = inset
         return self
     }
     
-    /// 是否允许滚动, 默认true
+    /// 文本颜色
     @discardableResult
     func textColor(_ textColor: UIColor) -> Link {
         self.base.textColor = textColor

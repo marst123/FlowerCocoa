@@ -1,6 +1,7 @@
 import UIKit
 
 
+// MARK: Image查找方式
 public extension UIImage {
     
     class func findName(_ name: String) -> UIImage? {
@@ -15,3 +16,4 @@ public extension UIImage {
         return UIImage(contentsOfFile: filePath)
     }
 }
+

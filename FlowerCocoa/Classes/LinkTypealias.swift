@@ -1,6 +1,3 @@
-
-
-import Foundation
 import UIKit
 
 public typealias NullHandler = (() -> Void)
@@ -8,8 +5,6 @@ public typealias NullHandler = (() -> Void)
 public typealias AnyHandler = ((Any?) -> Void)
 
 public typealias BlockHandler<T> = ((T) -> Void)
-
-
 
 public typealias Flower_AlertController = UIAlertController
 
@@ -42,3 +37,13 @@ public typealias Flower_TextField = UITextField
 public typealias Flower_TextView = UITextView
 
 public typealias Flower_View = UIView
+
+public typealias Flower_BezierPath = UIBezierPath
+
+public typealias Flower_CA_GradientLayer = CAGradientLayer
+
+public typealias Flower_CA_ShapeLayer = CAShapeLayer
+
+public typealias Flower_CA_TextLayer = CATextLayer
+
+public typealias Flower_CA_TransformLayer = CATransformLayer
