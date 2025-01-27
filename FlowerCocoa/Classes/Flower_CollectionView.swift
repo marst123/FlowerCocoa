@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_CollectionView {
+//MARK: - UICollectionView属性扩展
+
+public extension Link where Base: UICollectionView {
     
     /// UICollectionViewDataSource协议代理
     @discardableResult
@@ -41,7 +43,7 @@ public extension Link where Base: Flower_CollectionView {
     
     /// 注册表头视图的NIB文件
     @discardableResult
-    private func registerHeader<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
+    func registerHeader<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
         let identifier = String(describing: name)
         var bundle: Bundle? = nil
 
@@ -67,7 +69,7 @@ public extension Link where Base: Flower_CollectionView {
     
     /// 注册表尾视图的NIB文件
     @discardableResult
-    private func registerFooter<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
+    func registerFooter<T: UICollectionReusableView>(nibClass name: T.Type, at bundleClass: AnyClass? = nil) -> Link {
         let identifier = String(describing: name)
         var bundle: Bundle? = nil
 
@@ -93,7 +95,9 @@ public extension Link where Base: Flower_CollectionView {
 }
 
 
-public extension Link where Base: Flower_CollectionViewFlowLayout {
+//MARK: - UICollectionViewFlowLayout属性扩展
+
+public extension Link where Base: UICollectionViewFlowLayout {
     
     /// 滚动方向
     @discardableResult

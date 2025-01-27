@@ -3,7 +3,9 @@ import QuartzCore
 import Accelerate
 
 
-public extension Link where Base: Flower_CA_GradientLayer {
+//MARK: - CAGradientLayer属性扩展
+
+public extension Link where Base: CAGradientLayer {
     
     /// 大小
     @discardableResult
@@ -29,7 +31,7 @@ public extension Link where Base: Flower_CA_GradientLayer {
     
     /// point模式
     @discardableResult
-    func pointMode(_ mode: Flower_CA_GradientLayerPointMode) -> Link {
+    func pointMode(_ mode: CAGradientLayerPointDirection) -> Link {
         self.base.startPoint = mode.point.0
         self.base.endPoint = mode.point.1
         return self
@@ -37,7 +39,7 @@ public extension Link where Base: Flower_CA_GradientLayer {
 }
 
 
-public enum Flower_CA_GradientLayerPointMode {
+public enum CAGradientLayerPointDirection {
     
     case horizontal         // 水平方向
     
@@ -71,7 +73,7 @@ public enum Flower_CA_GradientLayerPointMode {
     
 }
 
-public extension Link where Base: Flower_View {
+public extension Link where Base: UIView {
     
     /// 渐变绘制
     /// - Parameters:
@@ -81,7 +83,7 @@ public extension Link where Base: Flower_View {
     ///   - size: 划分大小
     ///   - insert: 是否插入 默认false
     @discardableResult
-    func configGradientLayer(mode: Flower_CA_GradientLayerPointMode, colors: [CGColor]?, locations: [NSNumber]?, size: CGSize, insert: Bool = false) -> Link {
+    func configGradientLayer(mode: CAGradientLayerPointDirection, colors: [CGColor]?, locations: [NSNumber]?, size: CGSize, insert: Bool = false) -> Link {
         let layer = CAGradientLayer().link
             .pointMode(mode)
             .colors(colors)
@@ -106,7 +108,7 @@ public extension Link where Base: GradientLayerLabel {
     ///   - colors: 颜色组
     ///   - locations: 位置组
     @discardableResult
-    func configGradientLayer(mode: Flower_CA_GradientLayerPointMode, colors: [CGColor]?, locations: [NSNumber]?) -> Link {
+    func configGradientLayer(mode: CAGradientLayerPointDirection, colors: [CGColor]?, locations: [NSNumber]?) -> Link {
         self.base.config(mode: mode, colors: colors, locations: locations)
         return self
     }

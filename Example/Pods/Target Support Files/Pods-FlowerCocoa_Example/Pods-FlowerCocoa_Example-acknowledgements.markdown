@@ -24,9 +24,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 
 
-## SnapKit
+## Moisture
 
-Copyright (c) 2011-Present SnapKit Team - https://github.com/SnapKit
+Copyright (c) 2025 marst123 <tianlan2325@qq.com>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_ImageView {
+//MARK: - UIImageView属性扩展
+
+public extension Link where Base: UIImageView {
 
     /// 是否高亮
     @discardableResult

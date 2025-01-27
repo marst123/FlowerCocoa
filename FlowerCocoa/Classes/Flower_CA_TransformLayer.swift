@@ -1,6 +1,7 @@
 import UIKit
 import QuartzCore
 
+
 /*
  CATransformLayer 是一个特殊的 CALayer 类型.它允许将其子图层组织成一个可旋转的 3D 图层结构。
  在 CATransformLayer 中，所有的子图层共享同一个 3D 坐标系，这些子图层在 3D 空间中排列
@@ -10,7 +11,11 @@ import QuartzCore
  3. 设置transform属性 (效果)
  4. 将CATransformLayer对象通过addSublayer添加到父layer图层中
  */
-public extension Link where Base: Flower_CA_TransformLayer {
+
+
+//MARK: - CATransformLayer属性扩展
+
+public extension Link where Base: CATransformLayer {
     
     /*
      zPosition 是一个浮点型数值，用于控制子图层在 3D 坐标系中的位置，以此来决定子图层的前后顺序。

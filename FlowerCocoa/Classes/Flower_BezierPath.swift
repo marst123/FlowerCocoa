@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_BezierPath {
+//MARK: - UIBezierPath属性扩展
+
+public extension Link where Base: UIBezierPath {
 
     /// 起点
     @discardableResult

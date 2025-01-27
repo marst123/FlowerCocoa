@@ -1,10 +1,13 @@
 import UIKit
 
+
 public enum TextFieldTrait { }
 public enum KeyBoardTrait { }
 
 
-public extension Link where Base: Flower_TextField {
+//MARK: - UITextField属性扩展
+
+public extension Link where Base: UITextField {
     
     /// 文本视图的代理
     @discardableResult
@@ -85,5 +88,4 @@ public extension Link where Base: Flower_TextField {
         self.base.leftViewMode = .always
         return self
     }
-    
 }

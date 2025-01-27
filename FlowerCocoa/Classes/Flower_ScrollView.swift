@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_ScrollView {
+//MARK: - UIScrollView属性扩展
+
+public extension Link where Base: UIScrollView {
     
     /// 代理对象
     @discardableResult

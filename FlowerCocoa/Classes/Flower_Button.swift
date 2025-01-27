@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_Button {
+//MARK: - UIButton属性扩展
+
+public extension Link where Base: UIButton {
     
     /// Normal配置
     @discardableResult
@@ -79,7 +81,7 @@ public extension Link where Base: Flower_Button {
     ///   - space: 间距
     @discardableResult
     func defaultEdges(style: ButtonEdgeInsetsStyle, space:CGFloat) -> Link {
-        self.base.layoutEdges(style: style, space: space)
+        self.base.edgeLayout(style, space: space)
         return self
     }
     
@@ -132,10 +134,47 @@ public extension Link where Base: Flower_Button {
         return self
     }
     
+    /// normal文本
+    @discardableResult
+    func titleForSelected(_ title: String) -> Link {
+        self.base.setTitle(title, for: .selected)
+        return self
+    }
+    
+    /// normal富文本
+    @discardableResult
+    func attrTitleForSelected(_ attrTitle: NSAttributedString?) -> Link {
+        self.base.setAttributedTitle(attrTitle, for: .selected)
+        return self
+    }
+    
+    /// normal标题颜色
+    @discardableResult
+    func titleColorForSelected(_ titleColor: UIColor?) -> Link {
+        self.base.setTitleColor(titleColor, for: .selected)
+        return self
+    }
+    
+    /// normal图片
+    @discardableResult
+    func imageForSelected(_ image: UIImage?) -> Link {
+        self.base.setImage(image, for: .selected)
+        return self
+    }
+    
+    /// normal背景图片
+    @discardableResult
+    func backgroundImageForSelected(_ image: UIImage?) -> Link {
+        self.base.setBackgroundImage(image, for: .selected)
+        return self
+    }
+    
     // 管理button方法硬编码
     
 }
 
+
+//MARK: - UIControl.State枚举方法
 
 public enum Flower_ButtonMode {
     

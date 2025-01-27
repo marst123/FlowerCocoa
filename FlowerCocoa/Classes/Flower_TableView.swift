@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_TableView {
+//MARK: - UITableView属性扩展
+
+public extension Link where Base: UITableView {
     
     /// UITableViewDataSource协议代理
     @discardableResult

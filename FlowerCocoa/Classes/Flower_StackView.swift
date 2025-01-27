@@ -1,12 +1,24 @@
 import UIKit
 
-public extension Link where Base: Flower_StackView {
+
+//MARK: - UIStackView属性扩展
+
+public extension Link where Base: UIStackView {
     
     /// 添加子视图
     @discardableResult
-    func arranged(_ subviews: [UIView]) -> Link {
+    func arrangedAdd(_ subviews: [UIView]) -> Link {
         subviews.forEach { view in
             self.base.addArrangedSubview(view)
+        }
+        return self
+    }
+    
+    /// 添加子视图
+    @discardableResult
+    func arrangedRemove(_ subviews: [UIView]) -> Link {
+        subviews.forEach { view in
+            self.base.removeArrangedSubview(view)
         }
         return self
     }
@@ -25,44 +37,5 @@ public extension Link where Base: Flower_StackView {
         self.base.spacing = spacing
         return self
     }
-    
-    @discardableResult
-    func label(_ closure: BlockHandler<UILabel>? = nil) -> Link {
-        let view = UILabel()
-        self.base.addArrangedSubview(view)
-        closure?(view)
-        return self
-    }
 
-    @discardableResult
-    func button(_ closure: BlockHandler<UIButton>? = nil) -> Link {
-        let view = UIButton()
-        self.base.addArrangedSubview(view)
-        closure?(view)
-        return self
-    }
-    
-    @discardableResult
-    func textField(_ closure: BlockHandler<UITextField>? = nil) -> Link {
-        let view = UITextField()
-        self.base.addArrangedSubview(view)
-        closure?(view)
-        return self
-    }
-
-    @discardableResult
-    func stackView(closure: @escaping BlockHandler<UIStackView>) -> Link {
-        let view = UIStackView()
-        self.base.addArrangedSubview(view)
-        closure(view)
-        return self
-    }
-    
-    @discardableResult
-    func imageView(closure: @escaping BlockHandler<UIImageView>) -> Link {
-        let view = UIImageView()
-        self.base.addArrangedSubview(view)
-        closure(view)
-        return self
-    }
 }

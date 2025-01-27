@@ -1,11 +1,10 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '13.0'
 
 target 'FlowerCocoa_Example' do
 
   pod 'FlowerCocoa', :path => '../'
-  pod 'SnapKit', '4.2.0'
 
   target 'FlowerCocoa_Tests' do
     inherit! :search_paths

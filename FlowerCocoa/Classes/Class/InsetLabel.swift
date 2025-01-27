@@ -1,15 +1,15 @@
-//
-//  InsetLabel.swift
-//  gogo
-//
-//  Created by zhuxiang on 2022/6/27.
-//
-
 import UIKit
+
+
 
 public class InsetLabel: UILabel {
     // 1.定义一个接受间距的属性
-    var textInsets = UIEdgeInsets.zero
+    var textInsets = UIEdgeInsets.zero {
+        didSet {
+            // 内边距变化时，重新布局文本
+            setNeedsLayout()
+        }
+    }
     
     //2. 返回 label 重新计算过 text 的 rectangle
     public override func textRect(forBounds bounds: CGRect, limitedToNumberOfLines numberOfLines: Int) -> CGRect {
@@ -30,6 +30,7 @@ public class InsetLabel: UILabel {
     public override func drawText(in rect: CGRect) {
         super.drawText(in: rect.inset(by: textInsets))
     }
+    
 }
 
 @IBDesignable

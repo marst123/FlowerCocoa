@@ -1,9 +1,9 @@
 # FlowerCocoa
 
-[![CI Status](https://img.shields.io/travis/marst123/FlowerCocoa.svg?style=flat)](https://travis-ci.org/marst123/FlowerCocoa)
-[![Version](https://img.shields.io/cocoapods/v/FlowerCocoa.svg?style=flat)](https://cocoapods.org/pods/FlowerCocoa)
-[![License](https://img.shields.io/cocoapods/l/FlowerCocoa.svg?style=flat)](https://cocoapods.org/pods/FlowerCocoa)
-[![Platform](https://img.shields.io/cocoapods/p/FlowerCocoa.svg?style=flat)](https://cocoapods.org/pods/FlowerCocoa)
+[![CI Status][image-1]][1]
+[![Version][image-2]][2]
+[![License][image-3]][3]
+[![Platform][image-4]][4]
 
 
 
@@ -30,7 +30,7 @@ let label = UILabel().text(name).textColor(color)
 Using chain, you don't need to regenerate the current object for setting the attribute. Although we know who this object is, it is clearly simplified, but it is not perfect.
 
 This is my original idea. I just want to start the UI through the chain call and define the attributes to make things simple. Then I realized that in practice, I still need them to communicate with each other.
-Therefore, the most important thing is to insert other attributes with the `link ''. Through a generic "link" layer, I can define new characters within the range allowed by nsobject without being restrained by which role (reference, RX).
+Therefore, the most important thing is to insert other attributes with the \`link ''. Through a generic "link" layer, I can define new characters within the range allowed by nsobject without being restrained by which role (reference, RX).
 
 It is like a multifunctional plug that can be compatible with different characteristics of different brands, but it also has the same characteristics, reminding me not only for UIKIT, but even the CA and Quartzcore frameworks.
 
@@ -39,11 +39,7 @@ This is a very simple library that makes the UI definition as simple as possible
 ## Features
 
 - [x] Based on `link` access to UI, support custom expansion.
-- [x] Extensions for UIKit `UIAlertController`， `UICollectionView`， `UITableView`，`UIControl`， ` UIButton`， `UILabel`，`UIStackView`， `UIView`，`UIBezierPath` more..
-- [x] Extensions for Quartzcore  `CAGradientLayer`，`CAShapeLayer`，`CATextLayer`
-- [x] One line of code sets the font, color and image.
-- [x] Simple gesture operation.
-- [x] Compiling rich text is more user-friendly.
+-  [x] Low learning cost, easier to get started.
 - [x] Clean code separation.
 - [x] Special Label: GradientLayerlabel，InsetLabel，TextLayerLabel
 - [x] High playability😜
@@ -54,11 +50,13 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS9.0+
+- iOS 13.0+
+- Swift 5.0+
+- CocoaPods
 
 ## Installation
 
-FlowerCocoa is available through [CocoaPods](https://cocoapods.org). To install
+FlowerCocoa is available through [CocoaPods][5]. To install
 it, simply add the following line to your Podfile:
 
 ```ruby
@@ -70,93 +68,28 @@ pod 'FlowerCocoa'
 **You need to evoke it:** 
 
 ```
-lazy var flower_View: UIView = {
-	return UIView().link
-		.bgColor(.white)
-		.isUserInteractionEnabled(true)
-		.base
-}()
-```
+UIView().link
+			.bgColor(.white)
+			.isUserInteractionEnabled(true)
+			.base
 
+UILabel().link
+			.text("FlowerCocoa")
+			.titleColor(.hex("#000000"))
+			.font(.regular(12))
+			.lines(0)
+			.alignment(.justified)
+			.base
 
-
-**For a better experience, you need:**
-
-```
-#	UILabel
-lazy var flower_label: UILabel = {
-	return UILabel().link
-		.text("FlowerCocoa")
-		.titleColor(.hex("#000000"))
-		.font(.regular(12))
-		.lines(0)
-		.alignment(.justified)
-		.base
-}()
-
-#	UIButton
-lazy var flower_button: UIButton = {
-	return UIButton().link
-		.stateNormal({$0.title("FlowerCocoa")})
-		.isEnabled(true)
-		.setTag(tag: 10000)
-		.base
-}()
-
-#	UIStackView
-lazy var flower_Cocoa: UIStackView = {
-	return UIStackView().link
-		.config(.horizontal, alignment: .fill, distribution: .fill, spacing: 0)
-		.arranged([flower_label, flower_button])
-		.base
-}()
-
-#	UICollectionView
-lazy var flower_collectionView: UICollectionView = {
-	let layout = UICollectionViewFlowLayout().link
-		.scrollDirection(.vertical)
-		.itemSize(.zero)
-		.base
-        
-	return UICollectionView(frame: .zero, collectionViewLayout: layout).link
-		.isScrollEnabled(false)
-		.showsVerticalScrollIndicator(false)
-		.showsHorizontalScrollIndicator(false)
-		.base
-}()
-```
-
-
-
-**You can also use it this way：**
+UIButton().link
+			.stateNormal({$0.title("FlowerCocoa")})
+			.isEnabled(true)
+			.setTag(tag: 10000)
+			.base
 
 ```
-var flower_block: BlockHandler<Bool>?
-var flower_nullblock: NullHandler?
 
-UIcolor.hex("#333333", alpha: 1)
-CGColor.rgb(65, 65, 65, 1)
-
-Font.ping(.regular(12))
-
-NSMutableAttributedString(string: "")
-		.append(string: "¥")
-		.appendStyle(.font(.ping(.bold(16))), string: "100")
-		.append(string: "/天")
-		
-flower_button.link.setAction { sender in }
-
-flower_View.link.addGesture([UITapGestureRecognizer(), UILongPressGestureRecognizer()]) { sender in
-	if sender is UITapGestureRecognizer {
-		print("Tap Action")
-	}else {
-		print("Long Action")
-	}
-}
-```
-
-
-
+It wraps `Moisture` so it will be lighter and more focused on itself, we just need to make the initialization scene more convenient via chaining.
 
 ## Author
 
@@ -165,3 +98,14 @@ marst123, tianlan2325@qq.com
 ## License
 
 FlowerCocoa is available under the MIT license. See the LICENSE file for more info.
+
+[1]:	https://travis-ci.org/marst123/FlowerCocoa
+[2]:	https://cocoapods.org/pods/FlowerCocoa
+[3]:	https://cocoapods.org/pods/FlowerCocoa
+[4]:	https://cocoapods.org/pods/FlowerCocoa
+[5]:	https://cocoapods.org
+
+[image-1]:	https://img.shields.io/travis/marst123/FlowerCocoa.svg?style=flat
+[image-2]:	https://img.shields.io/cocoapods/v/FlowerCocoa.svg?style=flat
+[image-3]:	https://img.shields.io/cocoapods/l/FlowerCocoa.svg?style=flat
+[image-4]:	https://img.shields.io/cocoapods/p/FlowerCocoa.svg?style=flat

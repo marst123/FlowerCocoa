@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: TextInput {
+//MARK: - TextInput协议扩展
+
+extension Link where Base: TextInputLayer {
     
     /// 是否作为安全文本输入
     @discardableResult
@@ -32,7 +34,10 @@ public extension Link where Base: TextInput {
     }
 }
 
-public protocol TextInput {
+
+//MARK: - TextInput协议
+
+public protocol TextInputLayer {
     func keyboardType(_ keyboardType: UIKeyboardType)
     func secureTextEntry(_ secureTextEntry: Bool)
     func returnKeyType(_ returnKeyType: UIReturnKeyType)
@@ -40,7 +45,7 @@ public protocol TextInput {
 }
 
 
-extension Flower_TextView: TextInput {
+extension UITextView: TextInputLayer {
     public func keyboardType(_ keyboardType: UIKeyboardType) {
         self.keyboardType = keyboardType
     }
@@ -59,7 +64,7 @@ extension Flower_TextView: TextInput {
 }
 
 
-extension Flower_TextField: TextInput {
+extension UITextField: TextInputLayer {
     public func keyboardType(_ keyboardType: UIKeyboardType) {
         self.keyboardType = keyboardType
     }

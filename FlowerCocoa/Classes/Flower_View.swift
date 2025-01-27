@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_View {
+//MARK: - UIView属性扩展
+
+public extension Link where Base: UIView {
     
     
     /*
@@ -27,9 +29,9 @@ public extension Link where Base: Flower_View {
         return self
     }
     
-    /*
-     尽量不使用这里处理约束,snapkit很方便,还是保证功能样式与视图坐标分离
-     */
+    
+    //MARK: - Size
+    
     @discardableResult
     func size( w: CGFloat, h: CGFloat) -> Link {
         self.base.widthAnchor.constraint(equalToConstant: w).isActive = true
@@ -48,6 +50,12 @@ public extension Link where Base: Flower_View {
         self.base.widthAnchor.constraint(equalToConstant: w).isActive = true
         return self
     }
+    /*
+     尽量不使用这里处理约束,snapkit很方便,还是保证功能样式与视图坐标分离
+     */
+    
+    
+    //MARK: - 圆角/边框
     
     /// 圆角半径
     @discardableResult
@@ -56,6 +64,18 @@ public extension Link where Base: Flower_View {
         if let mask = masksToBounds {
             self.base.layer.masksToBounds = mask
         }
+        return self
+    }
+    
+    /// 贝塞尔路径使视图的图层指定圆角
+    @discardableResult
+    func roundingCorners(_ roundingCorners: UIRectCorner, radius: CGFloat) -> Link {
+        let bpath = UIBezierPath.init(roundedRect: self.base.bounds, byRoundingCorners: roundingCorners, cornerRadii: CGSize(width: radius, height: radius))
+        let shapeLayer = CAShapeLayer.init()
+        shapeLayer.frame = self.base.bounds
+        shapeLayer.path = bpath.cgPath
+        self.base.layer.mask = shapeLayer
+        
         return self
     }
     
@@ -70,6 +90,20 @@ public extension Link where Base: Flower_View {
     @discardableResult
     func borderWidth(_ borderWidth: CGFloat) -> Link {
         self.base.layer.borderWidth = borderWidth
+        return self
+    }
+    
+    
+    //MARK: - 阴影
+    
+    /// 添加阴影
+    @discardableResult
+    func addShadow(offset: CGSize, path: CGPath?, opacity: Float, color: CGColor?, radius: CGFloat) -> Link {
+        shadowOffset(offset)
+        shadowPath(path)
+        shadowOpacity(opacity)
+        shadowColor(color)
+        shadowRadius(radius)
         return self
     }
     
@@ -108,6 +142,16 @@ public extension Link where Base: Flower_View {
         return self
     }
     
+    
+    //MARK: - 内容 (ContentMode/alpha/tintColor/backgroundColor)
+    
+    /// 视图的内容模式
+    @discardableResult
+    func contentMode(_ mode: UIView.ContentMode) -> Link {
+        self.base.contentMode = mode
+        return self
+    }
+    
     /// 视图的透明度
     @discardableResult
     func alpha(_ alpha: CGFloat) -> Link {
@@ -129,24 +173,8 @@ public extension Link where Base: Flower_View {
         return self
     }
     
-    /// 视图的内容模式
-    @discardableResult
-    func contentMode(_ mode: UIView.ContentMode) -> Link {
-        self.base.contentMode = mode
-        return self
-    }
     
-    /// 贝塞尔路径使视图的图层指定圆角
-    @discardableResult
-    func roundingCorners(_ roundingCorners: UIRectCorner, radius: CGFloat) -> Link {
-        let bpath = UIBezierPath.init(roundedRect: self.base.bounds, byRoundingCorners: roundingCorners, cornerRadii: CGSize(width: radius, height: radius))
-        let shapeLayer = CAShapeLayer.init()
-        shapeLayer.frame = self.base.bounds
-        shapeLayer.path = bpath.cgPath
-        self.base.layer.mask = shapeLayer
-        
-        return self
-    }
+    //MARK: - 绘制
     
     /// 在指定方向上为视图添加line线
     @discardableResult
@@ -155,37 +183,8 @@ public extension Link where Base: Flower_View {
         return self
     }
     
-    /// 为视图添加手势
-    @discardableResult
-    func addGesture(_ recognizer: UIGestureRecognizer) -> Link {
-        self.base.addGestureRecognizer(recognizer)
-        return self
-    }
-    
-    /*
-     example:
-     link.addGesture([UITapGestureRecognizer(), UILongPressGestureRecognizer()]) { sender in
-     if sender is UITapGestureRecognizer {
-        print("333333")
-     }else {
-        print("444444")
-     }
-     */
-    /// 添加操作手势
-    @discardableResult
-    func addGesture(_ recognizers: [UIGestureRecognizer], action: @escaping CustomGestureClosure) -> Link {
-        self.base.setAction(recognizers: recognizers, action: action)
-        return self
-    }
-    
-    /// 移除操作手势
-    @discardableResult
-    func removeGesture(_ recognizers: [UIGestureRecognizer]) -> Link {
-        for recognizer in recognizers {
-            self.base.removeGestureRecognizer(recognizer)
-        }
-        return self
-    }
+
+    //MARK: - 添加/删除
     
     /// 从父视图中移除自身
     @discardableResult
@@ -207,32 +206,27 @@ public extension Link where Base: Flower_View {
         self.base.layer.addSublayer(layer)
         return self
     }
-    
-    /*
-     CATransform3D是用于处理三维变换的类，可以在三个轴上进行平移、旋转、缩放和扭曲.
-     它通常应用于对图层进行立体变换,将一个视图呈现3D效果
-     */
+
     /// 转换矩阵3D
+    /// CATransform3D是用于处理三维变换的类，可以在三个轴上进行平移、旋转、缩放和扭曲.
+    /// 它通常应用于对图层进行立体变换,将一个视图呈现3D效果
     @discardableResult
     func transform(_ transform: CATransform3D) -> Link {
         self.base.layer.transform = transform
         return self
     }
     
-    /*
-     /// let tra = CGAffineTransform.identity 初始化
-     /// 链式调用:
-     /// rotated             旋转
-     /// scaled              缩放
-     /// translated         平移
-     */
-    /*
-     CGAffineTransform处理二维变换的类，可以在平面内进行平移、旋转、缩放和斜切等变换
-     */
-    ///仿射变换2D
+    /// 仿射变换2D
+    /// CGAffineTransform处理二维变换的类，可以在平面内进行平移、旋转、缩放和斜切等变换
+    /// let tra = CGAffineTransform.identity 初始化
+    /// 链式调用: rotated:旋转 scaled:缩放 translated:平移
     @discardableResult
     func toAffineTransform(_ affineTransform: CGAffineTransform) -> Link {
         self.base.layer.setAffineTransform(affineTransform)
         return self
     }
+    
+    
+    //MARK: - 手势详见UIViewExtensions扩展
+
 }

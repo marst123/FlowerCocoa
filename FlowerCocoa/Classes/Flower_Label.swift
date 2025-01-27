@@ -5,7 +5,11 @@ import UIKit
  这段代码是Link结构体的一个扩展，使用了泛型where子句.来限制Link的泛型类型参数Base只能是Flower_Label的子类
  也就是self.base 是当前 Base 泛型类型的子类,在这里 self.base 为Flower_Label的子类
  */
-public extension Link where Base: Flower_Label {
+
+
+//MARK: - UILabel属性扩展
+
+public extension Link where Base: UILabel {
 
     /// 是否高亮
     @discardableResult
@@ -16,7 +20,7 @@ public extension Link where Base: Flower_Label {
     
     /// 文本颜色
     @discardableResult
-    func titleColor(_ color: UIColor?) -> Link {
+    func textColor(_ color: UIColor?) -> Link {
         self.base.textColor = color
         return self
     }
@@ -71,8 +75,10 @@ public extension Link where Base: Flower_Label {
     }
 }
 
-//MARK: 针对InsetLabel新增扩展
-public extension Link where Base: Flower_InsetLabel {
+
+//MARK: - 针对InsetLabel新增扩展
+
+public extension Link where Base: InsetLabel {
     
     /// 文本内边距
     @discardableResult

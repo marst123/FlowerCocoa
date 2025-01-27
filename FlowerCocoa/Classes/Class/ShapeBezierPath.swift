@@ -28,7 +28,7 @@ open class BezierPathManager {
         
     }
     
-    public func get(_ mode: Flower_BezierPathMode) -> Flower_BezierPath {
+    public func get(_ mode: Flower_BezierPathMode) -> UIBezierPath {
         switch mode {
         case .line:
             return UIBezierPath()

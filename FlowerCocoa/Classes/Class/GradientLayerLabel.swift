@@ -5,21 +5,20 @@ public class GradientLayerLabel: UILabel {
         return CAGradientLayer.self
     }
     
-    var gradLayer: CAGradientLayer?
+    var gradientLayer: CAGradientLayer? {
+        return layer as? CAGradientLayer
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
         
     }
     
-    func config(mode: Flower_CA_GradientLayerPointMode, colors: [CGColor]?, locations: [NSNumber]?) {
-        if let gradLayer = layer as? CAGradientLayer {
-            gradLayer.colors = colors
-            gradLayer.locations = locations
-            gradLayer.startPoint = mode.point.0
-            gradLayer.endPoint = mode.point.1
-        }
-        
+    func config(mode: CAGradientLayerPointDirection, colors: [CGColor]?, locations: [NSNumber]?) {
+        gradientLayer?.colors = colors
+        gradientLayer?.locations = locations
+        gradientLayer?.startPoint = mode.point.0
+        gradientLayer?.endPoint = mode.point.1
     }
     
     required init?(coder aDecoder: NSCoder) {

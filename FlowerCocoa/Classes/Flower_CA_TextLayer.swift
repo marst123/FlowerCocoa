@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_CA_TextLayer {
+//MARK: - CATextLayer属性扩展
+
+public extension Link where Base: CATextLayer {
     
     /// 是否像素化
     @discardableResult

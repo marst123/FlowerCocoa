@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'FlowerCocoa'
-  s.version          = '0.3.0'
+  s.version          = '0.3.2'
   s.summary          = 'A short description of FlowerCocoa.'
 
 # This description is used to generate tags and improve search results.
@@ -28,10 +28,10 @@ TODO: Add long description of the pod here.
 
 s.swift_versions = ['5.0']
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'FlowerCocoa/Classes/**/*'
-  s.dependency 'SnapKit'
+  s.dependency 'Moisture'
   
   # s.resource_bundles = {
   #   'FlowerCocoa' => ['FlowerCocoa/Assets/*.png']

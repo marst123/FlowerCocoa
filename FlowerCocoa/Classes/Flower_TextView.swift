@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_TextView {
+//MARK: - UITextView属性扩展
+
+public extension Link where Base: UITextView {
     
     /// 文本视图的代理
     @discardableResult

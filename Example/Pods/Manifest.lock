@@ -1,24 +1,25 @@
 PODS:
-  - FlowerCocoa (0.3.0):
-    - SnapKit
-  - SnapKit (4.2.0)
+  - FlowerCocoa (0.3.2):
+    - Moisture
+  - Moisture (0.1.007):
+    - Moisture/Common (= 0.1.007)
+  - Moisture/Common (0.1.007)
 
 DEPENDENCIES:
   - FlowerCocoa (from `../`)
-  - SnapKit (= 4.2.0)
 
 SPEC REPOS:
   trunk:
-    - SnapKit
+    - Moisture
 
 EXTERNAL SOURCES:
   FlowerCocoa:
     :path: "../"
 
 SPEC CHECKSUMS:
-  FlowerCocoa: 42cbd5a344d838a2216579c51ef80ddea87178ba
-  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  FlowerCocoa: d68e301ec56adc11d026e19361e754086bbc3461
+  Moisture: 197eb1222dbd7f83f1292db32e9e4c85367df29a
 
-PODFILE CHECKSUM: 5d09fd28d2fcc2005150ead5b22e7fa1c5c604b0
+PODFILE CHECKSUM: deddfdc2e657e5daaf4232be8f7227377b79f045
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.16.2

@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_Control {
+//MARK: - UIControl属性扩展
+
+public extension Link where Base: UIControl {
     
     /// 是否可用
     @discardableResult
@@ -21,13 +23,6 @@ public extension Link where Base: Flower_Control {
     @discardableResult
     func addTarget(_ target: Any?, action: Selector, event: UIControl.Event = .touchUpInside) -> Link {
         self.base.addTarget(target, action: action, for: event)
-        return self
-    }
-    
-    /// 逃逸闭包的点击事件
-    @discardableResult
-    func setAction(event: UIControl.Event = .touchUpInside, action: @escaping ControlActionClosure) -> Link {
-        self.base.setAction(event: event, action: action)
         return self
     }
     

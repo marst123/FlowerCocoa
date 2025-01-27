@@ -1,7 +1,9 @@
 import UIKit
 
 
-public extension Link where Base: Flower_PageControl {
+//MARK: - UIPageControl属性扩展
+
+public extension Link where Base: UIPageControl {
     
     /// 是否隐藏单页时的圆点
     @discardableResult

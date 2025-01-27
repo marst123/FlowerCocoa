@@ -2,7 +2,9 @@ import UIKit
 import QuartzCore
 
 
-public extension Link where Base: Flower_CA_ShapeLayer {
+//MARK: - CAShapeLayer属性扩展
+
+public extension Link where Base: CAShapeLayer {
     
     /// 路径
     @discardableResult

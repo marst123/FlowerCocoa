@@ -1,5 +1,5 @@
 import UIKit
-
+@_exported import Moisture
 /*
  定义了一个名为LinkCompatible的公共协议,
  它包含一个名为LinkBase的关联类型和一个只读计算属性link
